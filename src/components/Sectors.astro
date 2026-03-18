@@ -1,0 +1,79 @@
+---
+const sectors = [
+  {
+    name: 'Energy',
+    description: 'Meter reading, installation, disconnection, and reconnection for residential and commercial customers.',
+    cases: '3m annual cases',
+    icon: 'energy',
+  },
+  {
+    name: 'Water',
+    description: 'Meter services, site visits, and disconnection for commercial and residential water companies.',
+    cases: '2.2m annual cases',
+    icon: 'water',
+  },
+  {
+    name: 'Financial Services',
+    description: 'Debt collection, enforcement, and field-based resolution across consumer and commercial accounts.',
+    cases: '1m annual cases',
+    icon: 'finance',
+  },
+  {
+    name: 'Metering',
+    description: 'Smart meter installation, exchange, and commissioning programmes at scale.',
+    cases: '1m annual cases',
+    icon: 'meter',
+  },
+]
+---
+
+<section id="sectors" class="py-20 md:py-28 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-charcoal">
+        Built for regulated industries
+      </h2>
+      <p class="mt-4 text-lg text-charcoal-light leading-relaxed">
+        Innov-8 launches with Energy and Water, expanding into Financial Services, Enforcement, and Government.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      {sectors.map(sector => (
+        <div class="p-6 bg-white rounded-xl border border-gray-100 shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center shrink-0">
+              {sector.icon === 'energy' && (
+                <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              )}
+              {sector.icon === 'water' && (
+                <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3c-4 6-7 9-7 12.5a7 7 0 1014 0C19 12 16 9 12 3z" />
+                </svg>
+              )}
+              {sector.icon === 'finance' && (
+                <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              )}
+              {sector.icon === 'meter' && (
+                <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              )}
+            </div>
+            <div>
+              <div class="flex items-center gap-3 mb-2">
+                <h3 class="text-lg font-semibold text-gray-900">{sector.name}</h3>
+                <span class="text-xs font-medium text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full">{sector.cases}</span>
+              </div>
+              <p class="text-sm text-gray-600 leading-relaxed">{sector.description}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
