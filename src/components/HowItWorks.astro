@@ -1,63 +1,46 @@
 ---
+const steps = [
+  { num: '01', title: 'Receive', desc: 'Case files are ingested, validated, and enriched with address verification and third-party data.' },
+  { num: '02', title: 'Allocate', desc: 'Cases are distributed to the best-performing agencies based on geography, capacity, and track record.' },
+  { num: '03', title: 'Track', desc: 'Every case progresses through a defined lifecycle with real-time dashboards from allocation to completion.' },
+  { num: '04', title: 'Optimise', desc: 'Performance is scored and ranked. Top agencies earn more work. Standards rise continuously.' },
+]
 ---
 
-<section id="how-it-works" class="py-20 md:py-28 bg-gradient-to-b from-white to-brand-50/30">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="max-w-3xl mx-auto text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-charcoal">
-        How Innov-8 works
+<section id="how-it-works" class="py-24 md:py-32 relative overflow-hidden">
+  <!-- Subtle background -->
+  <div class="absolute inset-0 bg-gradient-to-b from-white via-brand-50/20 to-white -z-10"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center mb-20">
+      <p class="reveal text-xs font-semibold text-brand-600 uppercase tracking-[0.2em] mb-4 font-display">How It Works</p>
+      <h2 class="reveal reveal-delay-1 text-3xl md:text-[2.75rem] font-bold tracking-[-0.02em] text-charcoal leading-tight font-display">
+        From case to completion
       </h2>
-      <p class="mt-4 text-lg text-charcoal-light leading-relaxed">
+      <p class="reveal reveal-delay-2 mt-5 text-lg text-charcoal-light leading-relaxed">
         We sit between you and your field agencies, replacing fragmented supplier management
         with a single technology-enabled relationship.
       </p>
     </div>
 
-    <div class="relative">
-      <!-- Connection line -->
-      <div class="hidden lg:block absolute top-24 left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-0.5 bg-brand-200"></div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="relative text-center">
-          <div class="w-12 h-12 rounded-full bg-brand-500 text-white font-bold text-lg flex items-center justify-center mx-auto mb-5 relative z-10">
-            1
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0">
+      {steps.map((step, i) => (
+        <div class={`reveal reveal-delay-${i + 1} relative lg:px-8 ${i < 3 ? 'lg:border-r lg:border-gray-200/60' : ''}`}>
+          <div class="text-[4rem] font-extrabold text-brand-100 leading-none font-display mb-4 select-none">
+            {step.num}
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">Receive</h3>
-          <p class="text-sm text-gray-600 leading-relaxed">
-            Your case files are ingested, validated, and enriched with address verification and third-party data.
-          </p>
-        </div>
+          <h3 class="text-xl font-bold text-charcoal mb-3 font-display">{step.title}</h3>
+          <p class="text-[15px] text-charcoal-light leading-relaxed">{step.desc}</p>
 
-        <div class="relative text-center">
-          <div class="w-12 h-12 rounded-full bg-brand-500 text-white font-bold text-lg flex items-center justify-center mx-auto mb-5 relative z-10">
-            2
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">Allocate</h3>
-          <p class="text-sm text-gray-600 leading-relaxed">
-            Cases are distributed to the best-performing agencies using data-driven allocation based on geography, capacity, and track record.
-          </p>
+          {i < 3 && (
+            <div class="hidden lg:flex absolute -right-3 top-10 w-6 h-6 items-center justify-center z-10">
+              <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          )}
         </div>
-
-        <div class="relative text-center">
-          <div class="w-12 h-12 rounded-full bg-brand-500 text-white font-bold text-lg flex items-center justify-center mx-auto mb-5 relative z-10">
-            3
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">Track</h3>
-          <p class="text-sm text-gray-600 leading-relaxed">
-            Every case progresses through a defined lifecycle. Real-time dashboards give you full visibility from allocation through to completion.
-          </p>
-        </div>
-
-        <div class="relative text-center">
-          <div class="w-12 h-12 rounded-full bg-brand-500 text-white font-bold text-lg flex items-center justify-center mx-auto mb-5 relative z-10">
-            4
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">Optimise</h3>
-          <p class="text-sm text-gray-600 leading-relaxed">
-            Performance is scored and ranked. Top agencies earn more work. Underperformers are replaced. Standards rise continuously.
-          </p>
-        </div>
-      </div>
+      ))}
     </div>
   </div>
 </section>

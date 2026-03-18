@@ -1,35 +1,50 @@
 ---
+const stats = [
+  { value: '7m+', label: 'Annual field visit cases' },
+  { value: '£500m', label: 'Total addressable market' },
+  { value: '50%', label: 'Consumer engagement uplift' },
+  { value: '6+', label: 'Industry sectors served' },
+]
 ---
 
-<section class="py-20 md:py-28 bg-brand-950 text-white">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="max-w-3xl mx-auto text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold tracking-tight">
-        A <span class="text-brand-300">£500m+</span> industry, ready for change
+<section class="relative py-28 md:py-36 overflow-hidden">
+  <!-- Dark layered background -->
+  <div class="absolute inset-0 bg-brand-950 -z-20"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-brand-900/50 via-brand-950 to-charcoal/30 -z-10"></div>
+
+  <!-- Decorative grid -->
+  <div class="absolute inset-0 opacity-[0.03] -z-10"
+    style="background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px); background-size: 64px 64px;">
+  </div>
+
+  <!-- Decorative chevrons -->
+  <div class="absolute bottom-8 right-8 lg:right-16 opacity-[0.05]">
+    <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
+      <path d="M40 20L90 80L40 140" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M80 20L130 80L80 140" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center mb-20">
+      <h2 class="reveal text-3xl md:text-[2.75rem] font-bold tracking-[-0.02em] text-white leading-tight font-display">
+        A <span class="text-brand-300">£500m+</span> industry,<br class="hidden sm:block" /> ready for change
       </h2>
-      <p class="mt-4 text-lg text-brand-200 leading-relaxed">
+      <p class="reveal reveal-delay-1 mt-5 text-lg text-brand-200/80 leading-relaxed">
         Over 7 million field visit cases are executed annually across the UK.
         Innov-8 brings data-driven panel management to an industry that hasn't innovated in three decades.
       </p>
     </div>
 
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-      <div class="text-center">
-        <div class="text-4xl md:text-5xl font-extrabold text-brand-300">7m+</div>
-        <div class="mt-2 text-sm text-brand-200">Annual field visit cases</div>
-      </div>
-      <div class="text-center">
-        <div class="text-4xl md:text-5xl font-extrabold text-brand-300">£500m</div>
-        <div class="mt-2 text-sm text-brand-200">Total addressable market</div>
-      </div>
-      <div class="text-center">
-        <div class="text-4xl md:text-5xl font-extrabold text-brand-300">50%</div>
-        <div class="mt-2 text-sm text-brand-200">Consumer engagement uplift potential</div>
-      </div>
-      <div class="text-center">
-        <div class="text-4xl md:text-5xl font-extrabold text-brand-300">6+</div>
-        <div class="mt-2 text-sm text-brand-200">Industry sectors served</div>
-      </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+      {stats.map((stat, i) => (
+        <div class={`reveal reveal-delay-${i + 1} text-center`}>
+          <div class="text-4xl md:text-[3.5rem] font-extrabold text-brand-300 leading-none font-display stat-glow">
+            {stat.value}
+          </div>
+          <div class="mt-3 text-sm text-brand-200/60 font-medium tracking-wide">{stat.label}</div>
+        </div>
+      ))}
     </div>
   </div>
 </section>

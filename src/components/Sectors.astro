@@ -4,72 +4,58 @@ const sectors = [
     name: 'Energy',
     description: 'Meter reading, installation, disconnection, and reconnection for residential and commercial customers.',
     cases: '3m annual cases',
-    icon: 'energy',
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />`,
   },
   {
     name: 'Water',
     description: 'Meter services, site visits, and disconnection for commercial and residential water companies.',
     cases: '2.2m annual cases',
-    icon: 'water',
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3c-4 6-7 9-7 12.5a7 7 0 1014 0C19 12 16 9 12 3z" />`,
   },
   {
     name: 'Financial Services',
     description: 'Debt collection, enforcement, and field-based resolution across consumer and commercial accounts.',
     cases: '1m annual cases',
-    icon: 'finance',
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />`,
   },
   {
     name: 'Metering',
     description: 'Smart meter installation, exchange, and commissioning programmes at scale.',
     cases: '1m annual cases',
-    icon: 'meter',
+    icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />`,
   },
 ]
 ---
 
-<section id="sectors" class="py-20 md:py-28 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="max-w-3xl mx-auto text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-charcoal">
+<section id="sectors" class="py-24 md:py-32 bg-gray-50/30 relative overflow-hidden">
+  <div class="absolute inset-0 chevron-grid opacity-30 -z-10"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center mb-20">
+      <p class="reveal text-xs font-semibold text-brand-600 uppercase tracking-[0.2em] mb-4 font-display">Sectors</p>
+      <h2 class="reveal reveal-delay-1 text-3xl md:text-[2.75rem] font-bold tracking-[-0.02em] text-charcoal leading-tight font-display">
         Built for regulated industries
       </h2>
-      <p class="mt-4 text-lg text-charcoal-light leading-relaxed">
+      <p class="reveal reveal-delay-2 mt-5 text-lg text-charcoal-light leading-relaxed">
         Innov-8 launches with Energy and Water, expanding into Financial Services, Enforcement, and Government.
       </p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-      {sectors.map(sector => (
-        <div class="p-6 bg-white rounded-xl border border-gray-100 shadow-sm">
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center shrink-0">
-              {sector.icon === 'energy' && (
-                <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              )}
-              {sector.icon === 'water' && (
-                <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3c-4 6-7 9-7 12.5a7 7 0 1014 0C19 12 16 9 12 3z" />
-                </svg>
-              )}
-              {sector.icon === 'finance' && (
-                <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              )}
-              {sector.icon === 'meter' && (
-                <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              )}
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      {sectors.map((sector, i) => (
+        <div class={`reveal reveal-delay-${(i % 2) + 1} group p-8 bg-white rounded-2xl border border-gray-100 hover:border-brand-200/60 transition-all duration-500 hover:shadow-xl hover:shadow-brand-50`}>
+          <div class="flex items-start gap-5">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 flex items-center justify-center shrink-0 group-hover:from-brand-100 group-hover:to-brand-200 transition-all duration-500">
+              <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <Fragment set:html={sector.icon} />
+              </svg>
             </div>
             <div>
-              <div class="flex items-center gap-3 mb-2">
-                <h3 class="text-lg font-semibold text-gray-900">{sector.name}</h3>
-                <span class="text-xs font-medium text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full">{sector.cases}</span>
+              <div class="flex items-center gap-3 mb-3">
+                <h3 class="text-lg font-bold text-charcoal font-display">{sector.name}</h3>
+                <span class="text-[11px] font-semibold text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full tracking-wide uppercase">{sector.cases}</span>
               </div>
-              <p class="text-sm text-gray-600 leading-relaxed">{sector.description}</p>
+              <p class="text-[15px] text-charcoal-light leading-relaxed">{sector.description}</p>
             </div>
           </div>
         </div>

@@ -1,45 +1,52 @@
 ---
 ---
 
-<section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
-  <!-- Background gradient -->
-  <div class="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-brand-50/30 -z-10"></div>
-  <div class="absolute top-20 right-0 w-[600px] h-[600px] bg-brand-100/40 rounded-full blur-3xl -z-10"></div>
-  <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-50/60 rounded-full blur-3xl -z-10"></div>
+<section class="relative min-h-[90vh] flex items-center pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+  <!-- Layered background -->
+  <div class="absolute inset-0 bg-gradient-to-b from-brand-50/50 via-white to-white -z-20"></div>
+  <div class="absolute inset-0 chevron-grid -z-10"></div>
+  <div class="absolute top-[-10%] right-[-5%] w-[700px] h-[700px] bg-brand-200/20 rounded-full blur-[120px] -z-10"></div>
+  <div class="absolute bottom-[-5%] left-[-10%] w-[500px] h-[500px] bg-brand-100/30 rounded-full blur-[100px] -z-10"></div>
 
-  <div class="max-w-7xl mx-auto px-6">
+  <!-- Decorative chevrons -->
+  <div class="absolute top-32 right-12 lg:right-24 opacity-[0.07] -z-10">
+    <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+      <path d="M30 20L70 60L30 100" stroke="#1aabb8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M60 20L100 60L60 100" stroke="#1aabb8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full">
     <div class="max-w-3xl">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-200 text-brand-700 text-sm font-medium mb-6">
-        <span class="w-2 h-2 bg-brand-500 rounded-full"></span>
+      <div class="reveal inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-brand-50 border border-brand-200/60 text-brand-700 text-sm font-medium mb-8">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+        </span>
         Panel Management Platform
       </div>
-      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-charcoal leading-[1.1]">
-        One platform to manage your
-        <span class="text-brand-500">field service agencies</span>
+
+      <h1 class="reveal reveal-delay-1 text-[2.75rem] md:text-[3.75rem] lg:text-[4.5rem] font-extrabold tracking-[-0.03em] text-charcoal leading-[1.05]">
+        One platform to<br class="hidden sm:block" /> manage your<br />
+        <span class="gradient-text">field service agencies</span>
       </h1>
-      <p class="mt-6 text-lg md:text-xl text-charcoal-light leading-relaxed max-w-2xl">
-        Innov-8 replaces fragmented agency relationships with a single, data-driven platform. Allocate cases, track performance, and drive transparency across your entire field services panel.
+
+      <p class="reveal reveal-delay-2 mt-7 text-lg md:text-xl text-charcoal-light leading-relaxed max-w-xl font-[410]">
+        Innov-8 replaces fragmented agency relationships with a single, data-driven platform. Allocate cases, track performance, and drive transparency across your entire panel.
       </p>
-      <div class="mt-10 flex flex-col sm:flex-row gap-4">
-        <a href="#contact" class="inline-flex items-center justify-center h-12 px-8 text-base font-semibold text-white bg-brand-500 rounded-lg hover:bg-brand-600 transition-colors shadow-lg shadow-brand-500/20">
+
+      <div class="reveal reveal-delay-3 mt-10 flex flex-col sm:flex-row gap-4">
+        <a href="#contact" class="group inline-flex items-center justify-center h-13 px-8 text-base font-semibold text-white bg-brand-500 rounded-full hover:bg-brand-600 transition-all duration-300 shadow-lg shadow-brand-500/20 hover:shadow-xl hover:shadow-brand-500/30 hover:-translate-y-0.5">
           Request a Demo
+          <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
         </a>
-        <a href="#how-it-works" class="inline-flex items-center justify-center h-12 px-8 text-base font-semibold text-gray-700 bg-white rounded-lg border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors">
+        <a href="#how-it-works" class="inline-flex items-center justify-center h-13 px-8 text-base font-semibold text-charcoal bg-white rounded-full border border-gray-200 hover:border-brand-300 hover:text-brand-600 transition-all duration-300 hover:-translate-y-0.5">
           Learn More
         </a>
       </div>
     </div>
 
-    <!-- Hero visual placeholder -->
-    <div class="mt-16 rounded-2xl border border-gray-200 bg-white shadow-2xl shadow-gray-200/50 overflow-hidden">
-      <div class="aspect-[16/8] bg-gradient-to-br from-brand-50 to-brand-100 flex items-center justify-center">
-        <div class="text-center text-brand-300">
-          <svg class="w-16 h-16 mx-auto mb-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
-          </svg>
-          <p class="text-sm font-medium">Platform Dashboard Screenshot</p>
-        </div>
-      </div>
-    </div>
   </div>
 </section>

@@ -1,27 +1,42 @@
 ---
 ---
 
-<section id="contact" class="py-20 md:py-28">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="relative rounded-3xl bg-gradient-to-br from-brand-500 to-brand-700 px-8 py-16 md:px-16 md:py-20 overflow-hidden">
-      <!-- Decorative elements -->
-      <div class="absolute top-0 right-0 w-96 h-96 bg-brand-400/20 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-0 left-0 w-64 h-64 bg-brand-600/30 rounded-full blur-3xl"></div>
+<section id="contact" class="py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="reveal relative rounded-3xl overflow-hidden">
+      <!-- Layered background -->
+      <div class="absolute inset-0 bg-gradient-to-br from-brand-500 via-brand-600 to-brand-800"></div>
+      <div class="absolute inset-0 chevron-grid opacity-20"></div>
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-400/15 rounded-full blur-[100px]"></div>
+      <div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-brand-300/10 rounded-full blur-[80px]"></div>
 
-      <div class="relative max-w-2xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">
-          Ready to transform your field services?
-        </h2>
-        <p class="mt-4 text-lg text-brand-100 leading-relaxed">
-          Join the UK's leading energy and water companies already working with Innov-8 to optimise their agency panels and raise service standards.
-        </p>
-        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="mailto:hello@innov8pm.co.uk" class="inline-flex items-center justify-center h-12 px-8 text-base font-semibold text-brand-700 bg-white rounded-lg hover:bg-brand-50 transition-colors shadow-lg">
-            Request a Demo
-          </a>
-          <a href="mailto:hello@innov8pm.co.uk" class="inline-flex items-center justify-center h-12 px-8 text-base font-semibold text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors">
-            Contact Us
-          </a>
+      <!-- Decorative chevrons -->
+      <div class="absolute top-8 right-8 lg:right-16 opacity-[0.08]">
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+          <path d="M25 15L55 50L25 85" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M50 15L80 50L50 85" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="relative px-8 py-20 md:px-16 md:py-24">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-3xl md:text-[2.75rem] font-bold tracking-[-0.02em] text-white leading-tight font-display">
+            Ready to transform your field&nbsp;services?
+          </h2>
+          <p class="mt-5 text-lg text-brand-100/90 leading-relaxed">
+            Join the UK's leading energy and water companies already working with Innov-8 to optimise their agency panels and raise service standards.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="mailto:hello@innov8pm.co.uk" class="group inline-flex items-center justify-center h-13 px-8 text-base font-semibold text-brand-700 bg-white rounded-full hover:bg-brand-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+              Request a Demo
+              <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+            <a href="mailto:hello@innov8pm.co.uk" class="inline-flex items-center justify-center h-13 px-8 text-base font-semibold text-white border-2 border-white/25 rounded-full hover:bg-white/10 hover:border-white/40 transition-all duration-300">
+              Contact Us
+            </a>
+          </div>
         </div>
       </div>
     </div>
