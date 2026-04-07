@@ -1,9 +1,10 @@
 ---
 const steps = [
   { num: '01', title: 'Receive', desc: 'Case files are ingested, validated, and enriched with address verification and third-party data.' },
-  { num: '02', title: 'Allocate', desc: 'Cases are distributed to the best-performing agencies based on geography, capacity, and track record.' },
+  { num: '02', title: 'Allocate', desc: 'Cases are distributed to agencies at a postcode level, with up to 4 agencies in each postcode. The allocation split is based on performance and capacity.' },
   { num: '03', title: 'Track', desc: 'Every case progresses through a defined lifecycle with real-time dashboards from allocation to completion.' },
-  { num: '04', title: 'Optimise', desc: 'Performance is scored and ranked. Top agencies earn more work. Standards rise continuously.' },
+  { num: '04', title: 'Optimise', desc: 'Agency performance is measured in 12-week cycles, at postcode level. Top performers are rewarded with higher guaranteed allocations in those postcodes for the following cycle — driving consistent improvement across our panel.' },
+  { num: '05', title: 'Quality Control', desc: 'All cases pass through our quality assurance framework, ensuring compliance to your standards. Additionally, 100% of cases are scored against our voice analysts tool, producing a scorecard on the customer engagement.' },
 ]
 ---
 
@@ -15,24 +16,23 @@ const steps = [
     <div class="max-w-2xl mx-auto text-center mb-20">
       <p class="reveal text-xs font-semibold text-brand-600 uppercase tracking-[0.2em] mb-4 font-display">How It Works</p>
       <h2 class="reveal reveal-delay-1 text-3xl md:text-[2.75rem] font-bold tracking-[-0.02em] text-charcoal leading-tight font-display">
-        From case to completion
+        Full end to end case management
       </h2>
       <p class="reveal reveal-delay-2 mt-5 text-lg text-charcoal-light leading-relaxed">
-        We sit between you and your field agencies, bringing all supplier management
-        together in a single technology-enabled relationship.
+        We position ourselves in between you and our panel of field agencies, delivering a data led strategy, overarched by our experienced team's collaboration.
       </p>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0">
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-0">
       {steps.map((step, i) => (
-        <div class={`reveal reveal-delay-${i + 1} relative lg:px-8 ${i < 3 ? 'lg:border-r lg:border-gray-200/60' : ''}`}>
+        <div class={`reveal reveal-delay-${i + 1} relative lg:px-8 ${i < 4 ? 'lg:border-r lg:border-gray-200/60' : ''}`}>
           <div class="text-[4rem] font-extrabold text-brand-100 leading-none font-display mb-4 select-none">
             {step.num}
           </div>
           <h3 class="text-xl font-bold text-charcoal mb-3 font-display">{step.title}</h3>
           <p class="text-[15px] text-charcoal-light leading-relaxed">{step.desc}</p>
 
-          {i < 3 && (
+          {i < 4 && (
             <div class="hidden lg:flex absolute -right-3 top-10 w-6 h-6 items-center justify-center z-10">
               <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />

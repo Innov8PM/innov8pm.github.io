@@ -1,0 +1,204 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1775578594246,
+  "projectRoot": "/Users/will/src/innov8/innov8pm.github.io",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": ">=22.12.0",
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "astro",
+        "version": "6.0.5",
+        "category": "fullstack"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": "Node.js 22.12.0"
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "astro dev",
+      "build": "astro build",
+      "preview": "astro preview",
+      "astro": "astro"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "public",
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 5,
+      "lastAccessed": 1775578594188,
+      "keyFiles": [
+        "favicon.ico",
+        "favicon.svg",
+        "index.html",
+        "logo-light.png",
+        "logo.png"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 4,
+      "lastAccessed": 1775578594194,
+      "keyFiles": [
+        "favicon.ico",
+        "favicon.svg",
+        "logo-light.png",
+        "logo.png"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 0,
+      "lastAccessed": 1775578594206,
+      "keyFiles": []
+    },
+    "src/assets": {
+      "path": "src/assets",
+      "purpose": "Static assets",
+      "fileCount": 0,
+      "lastAccessed": 1775578594207,
+      "keyFiles": []
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 12,
+      "lastAccessed": 1775578594208,
+      "keyFiles": [
+        "Audiences.astro",
+        "CTA.astro",
+        "DashboardMock.astro"
+      ]
+    },
+    "src/pages": {
+      "path": "src/pages",
+      "purpose": "Page components",
+      "fileCount": 1,
+      "lastAccessed": 1775578594208,
+      "keyFiles": [
+        "index.astro"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/components/DashboardMock.astro",
+      "accessCount": 10,
+      "lastAccessed": 1775578735085,
+      "type": "file"
+    },
+    {
+      "path": "src/components/HowItWorks.astro",
+      "accessCount": 7,
+      "lastAccessed": 1775578790185,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Problem.astro",
+      "accessCount": 5,
+      "lastAccessed": 1775578758272,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Audiences.astro",
+      "accessCount": 4,
+      "lastAccessed": 1775578862956,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Sectors.astro",
+      "accessCount": 4,
+      "lastAccessed": 1775578897702,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Hero.astro",
+      "accessCount": 3,
+      "lastAccessed": 1775578685493,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Features.astro",
+      "accessCount": 3,
+      "lastAccessed": 1775578824062,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Footer.astro",
+      "accessCount": 3,
+      "lastAccessed": 1775578831072,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Stats.astro",
+      "accessCount": 3,
+      "lastAccessed": 1775578871587,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 2,
+      "lastAccessed": 1775578643458,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/Nav.astro",
+      "accessCount": 2,
+      "lastAccessed": 1775578686292,
+      "type": "file"
+    },
+    {
+      "path": "src/components/CTA.astro",
+      "accessCount": 2,
+      "lastAccessed": 1775578827452,
+      "type": "file"
+    },
+    {
+      "path": "src/components/LogoBar.astro",
+      "accessCount": 1,
+      "lastAccessed": 1775578652763,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
