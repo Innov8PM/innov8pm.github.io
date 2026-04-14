@@ -19,26 +19,82 @@
       </div>
 
       <div class="relative px-8 py-20 md:px-16 md:py-24">
-        <div class="max-w-2xl mx-auto text-center">
-          <h2 class="text-3xl md:text-[2.75rem] font-bold tracking-[-0.02em] text-white leading-tight font-display">
-            Ready to transform your field&nbsp;services?
-          </h2>
-          <p class="mt-5 text-lg text-brand-100/90 leading-relaxed">
-            Join the UK's leading energy and water companies already working with Innov-8 to optimise their agency panels and raise service standards.
-          </p>
-          <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:hello@innov8pm.co.uk" class="group inline-flex items-center justify-center h-13 px-8 text-base font-semibold text-brand-700 bg-white rounded-full hover:bg-brand-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-              Get in Touch
-              <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        <div class="max-w-3xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-[2.75rem] font-bold tracking-[-0.02em] text-white leading-tight font-display">
+              Ready to transform your field&nbsp;services?
+            </h2>
+            <p class="mt-5 text-lg text-brand-100/90 leading-relaxed">
+              Join the UK's leading energy and water companies already working with Innov-8 to optimise their agency panels and raise service standards.
+            </p>
+          </div>
+
+          <form id="contact-form" class="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <div>
+              <label for="name" class="sr-only">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required
+                class="w-full h-12 px-5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm font-medium focus:outline-none focus:border-white/50 focus:bg-white/15 transition-all duration-300" />
+            </div>
+            <div>
+              <label for="company" class="sr-only">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company" required
+                class="w-full h-12 px-5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm font-medium focus:outline-none focus:border-white/50 focus:bg-white/15 transition-all duration-300" />
+            </div>
+            <div>
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email address" required
+                class="w-full h-12 px-5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm font-medium focus:outline-none focus:border-white/50 focus:bg-white/15 transition-all duration-300" />
+            </div>
+            <div>
+              <label for="phone" class="sr-only">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="Phone number"
+                class="w-full h-12 px-5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm font-medium focus:outline-none focus:border-white/50 focus:bg-white/15 transition-all duration-300" />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="sr-only">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="How can we help?" required
+                class="w-full px-5 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm font-medium focus:outline-none focus:border-white/50 focus:bg-white/15 transition-all duration-300 resize-none"></textarea>
+            </div>
+            <div class="sm:col-span-2 text-center">
+              <button type="submit"
+                class="group inline-flex items-center justify-center h-13 px-10 text-base font-semibold text-brand-700 bg-white rounded-full hover:bg-brand-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                Send Message
+                <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <div id="form-success" class="hidden text-center py-8">
+            <div class="w-16 h-16 rounded-full bg-white/15 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-            </a>
-            <a href="mailto:hello@innov8pm.co.uk" class="inline-flex items-center justify-center h-13 px-8 text-base font-semibold text-white border-2 border-white/25 rounded-full hover:bg-white/10 hover:border-white/40 transition-all duration-300">
-              Contact Us
-            </a>
+            </div>
+            <h3 class="text-xl font-bold text-white font-display">Thank you!</h3>
+            <p class="mt-2 text-brand-100/90">We'll be in touch shortly.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement
+  const success = document.getElementById('form-success')
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault()
+    const data = Object.fromEntries(new FormData(form))
+    try {
+      await fetch('https://formspree.io/f/hello@innov8pm.co.uk', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+    } catch (_) {}
+    form.classList.add('hidden')
+    success?.classList.remove('hidden')
+  })
+</script>

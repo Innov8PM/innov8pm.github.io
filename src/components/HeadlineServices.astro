@@ -1,0 +1,56 @@
+---
+const columns = [
+  {
+    items: [
+      'Welfare visits',
+      'Debt Reconnection visits',
+      'Vulnerability Investigations',
+      'Service Requests (NHH Water)',
+    ],
+  },
+  {
+    items: [
+      'Occupancy checks',
+      'Vacant property management',
+      'Long term unread meters',
+      'Meter Investigations',
+    ],
+  },
+  {
+    items: [
+      'Utility Warrants (Energy / Water)',
+      'Magistrates Court Applications',
+      'Warrant Scheduling',
+      'Temporary Meter Disconnections',
+    ],
+  },
+]
+---
+
+<section class="py-16 md:py-24 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-white via-brand-50/20 to-white -z-10"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center mb-16">
+      <p class="reveal text-xs font-semibold text-brand-600 uppercase tracking-[0.2em] mb-4 font-display">What We Do</p>
+      <h2 class="reveal reveal-delay-1 text-3xl md:text-[2.75rem] font-bold tracking-[-0.02em] text-charcoal leading-tight font-display">
+        Headline Services
+      </h2>
+    </div>
+
+    <div class="reveal reveal-delay-2 grid md:grid-cols-3 gap-8 lg:gap-12">
+      {columns.map((col) => (
+        <ul class="space-y-4">
+          {col.items.map((item) => (
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+              <span class="text-[15px] text-charcoal leading-relaxed font-medium">{item}</span>
+            </li>
+          ))}
+        </ul>
+      ))}
+    </div>
+  </div>
+</section>
