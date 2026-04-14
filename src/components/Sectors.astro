@@ -1,23 +1,44 @@
 ---
 const sectors = [
   {
-    name: 'Energy — Residential and Commercial',
-    description: 'Live debt visits, including Welfare & vulnerability visits. Commercial debt visits, Occupancy verification. Meter related visits. Warrant Services (pre payment, disconnection, faulty meter).',
+    name: 'Energy - Residential & Commercial',
+    items: [
+      'Welfare visits / Vulnerability assessments',
+      'Meter investigation / Self-disconnection visits',
+      'Occupancy management',
+      'Commercial live debt visits',
+      'Long unread meters',
+      'Warrants - application, scheduling, execution',
+    ],
     icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />`,
   },
   {
-    name: 'Water — Household and Non Household',
-    description: 'Live Debt Household Engagement visits. Retailer Live Debt visits / Temporary Disconnections. Non Household Warrant services (internal access — non payment, long term unread meters, Investigation, meter installation). Occupancy verification.',
+    name: 'Water - Household & Non-household',
+    items: [
+      'Live debt - Reconnection engagement visits',
+      'Vulnerability assessments',
+      'Occupancy management',
+      'Retailer live debt visits & temporary disconnections',
+      'Long unread meters',
+      'Warrants - Smart installation / Inspection / LUM / Disconnection',
+    ],
     icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3c-4 6-7 9-7 12.5a7 7 0 1014 0C19 12 16 9 12 3z" />`,
   },
   {
     name: 'Financial Services',
-    description: 'Mortgage Arrears. Reconnection Visits. Income and Expenditure / Pre Litigation.',
+    items: [
+      'Reconnection visits',
+      'Affordability / Vulnerability assessments',
+    ],
     icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />`,
   },
   {
-    name: 'DCA / Debt Purchase',
-    description: 'Reconnection Visits. Pre Litigation. Affordability Assessments.',
+    name: 'DCA & Debt Purchase',
+    items: [
+      'Reconnection visits',
+      'Affordability / Vulnerability assessments',
+      'Pre purchase assessment',
+    ],
     icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />`,
   },
 ]
@@ -50,7 +71,16 @@ const sectors = [
               <div class="flex items-center gap-3 mb-3">
                 <h3 class="text-lg font-bold text-charcoal font-display">{sector.name}</h3>
               </div>
-              <p class="text-[15px] text-charcoal-light leading-relaxed">{sector.description}</p>
+              <ul class="space-y-2">
+                {sector.items.map(item => (
+                  <li class="flex gap-2 text-[15px] text-charcoal-light leading-relaxed">
+                    <svg class="w-4 h-4 text-brand-500 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
