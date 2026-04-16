@@ -29,7 +29,7 @@
             </p>
           </div>
 
-          <form id="contact-form" class="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+          <form id="contact-form" action="https://formspree.io/f/xzdyevww" method="POST" class="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
             <div>
               <label for="name" class="sr-only">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name" required
@@ -56,9 +56,12 @@
                 class="w-full px-5 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 text-sm font-medium focus:outline-none focus:border-white/50 focus:bg-white/15 transition-all duration-300 resize-none"></textarea>
             </div>
             <div class="sm:col-span-2 text-center">
-              <button type="submit"
-                class="group inline-flex items-center justify-center h-13 px-10 text-base font-semibold text-brand-700 bg-white rounded-full hover:bg-brand-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-                Send Message
+              <p id="form-error" class="hidden mb-4 text-sm text-white/90 bg-red-500/20 border border-red-300/30 rounded-lg px-4 py-3">
+                Something went wrong. Please try again or email <a href="mailto:hello@innov8pm.co.uk" class="underline">hello@innov8pm.co.uk</a>.
+              </p>
+              <button type="submit" id="form-submit"
+                class="group inline-flex items-center justify-center h-13 px-10 text-base font-semibold text-brand-700 bg-white rounded-full hover:bg-brand-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0">
+                <span id="form-submit-label">Send Message</span>
                 <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -82,19 +85,31 @@
 </section>
 
 <script>
-  const form = document.getElementById('contact-form') as HTMLFormElement
+  const form = document.getElementById('contact-form') as HTMLFormElement | null
   const success = document.getElementById('form-success')
+  const error = document.getElementById('form-error')
+  const submit = document.getElementById('form-submit') as HTMLButtonElement | null
+  const submitLabel = document.getElementById('form-submit-label')
+
   form?.addEventListener('submit', async (e) => {
     e.preventDefault()
-    const data = Object.fromEntries(new FormData(form))
+    error?.classList.add('hidden')
+    if (submit) submit.disabled = true
+    if (submitLabel) submitLabel.textContent = 'Sending…'
+
     try {
-      await fetch('https://formspree.io/f/hello@innov8pm.co.uk', {
+      const response = await fetch(form.action, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        headers: { Accept: 'application/json' },
+        body: new FormData(form),
       })
-    } catch (_) {}
-    form.classList.add('hidden')
-    success?.classList.remove('hidden')
+      if (!response.ok) throw new Error(`HTTP ${response.status}`)
+      form.classList.add('hidden')
+      success?.classList.remove('hidden')
+    } catch (_) {
+      error?.classList.remove('hidden')
+      if (submit) submit.disabled = false
+      if (submitLabel) submitLabel.textContent = 'Send Message'
+    }
   })
 </script>
