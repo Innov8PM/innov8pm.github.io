@@ -2,7 +2,7 @@
 title: Your top 5 questions about Innov-8, answered
 description: The questions we get asked most — what Innov-8 does, whether we run our own field agents, how much choice you have, body cameras, and what it costs to start.
 pubDate: 2026-05-28
-author: innov8
+author: mike-wolfenden
 tags:
   - faq
   - panel-management
