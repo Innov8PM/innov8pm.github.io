@@ -17,10 +17,9 @@ export const AUTHORS = {
     name: 'Mike Wolfenden',
     avatar: '/images/mike-wolfenden.png',
     linkedin: 'https://www.linkedin.com/in/mike-wolfenden-2120a216/',
-    // PLACEHOLDER copy inferred from his public LinkedIn (Owner, Innov-8
-    // Management; UK utilities / smart-meter / panel-management background).
-    // Replace with Mike's own wording before publishing.
-    role: 'Founder',
+    // Title per his LinkedIn ("CEO / Founder, Innov-8"). Bio is PLACEHOLDER
+    // copy inferred from his public profile — replace with his own wording.
+    role: 'CEO & Founder',
     bio: 'Mike is the founder of Innov-8 Management, helping UK energy and water companies bring data-driven rigour to panel management — from allocation and performance to transparent reporting across their field-service agencies.',
   },
   'will-faithfull': {
