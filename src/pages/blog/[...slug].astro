@@ -1,0 +1,82 @@
+---
+import { getCollection, render } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+import Nav from '../../components/Nav.astro'
+import Footer from '../../components/Footer.astro'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft)
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }))
+}
+
+const { post } = Astro.props
+const { Content } = await render(post)
+
+const dateFmt = new Intl.DateTimeFormat('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+})
+---
+
+<Layout title={`${post.data.title} — Innov-8`} description={post.data.description}>
+  <Nav />
+
+  <main class="pt-40 pb-24 md:pb-32">
+    <article class="max-w-3xl mx-auto px-6 lg:px-8">
+      <a
+        href="/blog/"
+        class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 hover:gap-2.5 transition-all duration-300 mb-10"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        All posts
+      </a>
+
+      <header class="mb-10 pb-10 border-b border-gray-100">
+        <div class="flex flex-wrap items-center gap-3 mb-5 text-xs font-medium uppercase tracking-[0.12em] text-brand-600 font-display">
+          <time datetime={post.data.pubDate.toISOString()}>
+            {dateFmt.format(post.data.pubDate)}
+          </time>
+          <span class="text-gray-300">&middot;</span>
+          <span>{post.data.author}</span>
+        </div>
+        <h1 class="text-3xl md:text-[2.75rem] font-bold tracking-[-0.02em] text-charcoal leading-tight font-display">
+          {post.data.title}
+        </h1>
+        <p class="mt-5 text-lg text-charcoal-light leading-relaxed">
+          {post.data.description}
+        </p>
+        {
+          post.data.tags.length > 0 && (
+            <div class="mt-6 flex flex-wrap gap-2">
+              {post.data.tags.map((tag) => (
+                <span class="inline-flex items-center px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-xs font-medium">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )
+        }
+      </header>
+
+      <div class="prose-i8">
+        <Content />
+      </div>
+
+      {
+        post.data.updatedDate && (
+          <p class="mt-12 text-sm text-charcoal-light italic">
+            Updated {dateFmt.format(post.data.updatedDate)}
+          </p>
+        )
+      }
+    </article>
+  </main>
+
+  <Footer />
+</Layout>
