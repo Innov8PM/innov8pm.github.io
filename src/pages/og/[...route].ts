@@ -29,7 +29,7 @@ const pages = {
   ),
 }
 
-export const { getStaticPaths, GET } = await OGImageRoute({
+const { getStaticPaths, GET: renderImage } = await OGImageRoute({
   param: 'route',
   pages,
   getImageOptions: (_path, page) => ({
@@ -61,3 +61,17 @@ export const { getStaticPaths, GET } = await OGImageRoute({
     fonts: ['./src/assets/fonts/Outfit.ttf', './src/assets/fonts/DMSans.ttf'],
   }),
 })
+
+// astro-og-canvas returns the PNG with no Content-Type header. Static builds
+// serve the file by extension so it's fine, but `astro dev` serves this route
+// dynamically — without the header the browser renders a broken image. Wrap
+// the handler to set it (also correct if ever served dynamically in prod).
+const GET: typeof renderImage = async (ctx) => {
+  const res = await renderImage(ctx)
+  return new Response(res.body, {
+    status: res.status,
+    headers: { ...Object.fromEntries(res.headers), 'Content-Type': 'image/png' },
+  })
+}
+
+export { getStaticPaths, GET }
