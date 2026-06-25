@@ -45,34 +45,35 @@ you'd still be going the best part of a century later.
 <svg viewBox="0 0 600 330" role="img" aria-label="A single planned run: six numbered stops visited in the cheapest order as one loop">
   <rect x="1" y="1" width="598" height="328" rx="14" fill="#f3f6fb"/>
   <g fill="#e9eef6">
-    <rect x="138" y="96" width="84" height="48" rx="8"/>
-    <rect x="258" y="96" width="84" height="48" rx="8"/>
-    <rect x="138" y="176" width="84" height="48" rx="8"/>
-    <rect x="378" y="176" width="84" height="48" rx="8"/>
-    <rect x="498" y="96" width="40" height="48" rx="8"/>
-    <rect x="498" y="176" width="40" height="48" rx="8"/>
+    <rect x="216" y="150" width="92" height="56" rx="10" transform="rotate(-5 262 178)"/>
+    <rect x="340" y="138" width="96" height="52" rx="10" transform="rotate(4 388 164)"/>
+    <rect x="48" y="48" width="84" height="50" rx="10" transform="rotate(-3 90 73)"/>
+    <rect x="512" y="150" width="62" height="64" rx="10" transform="rotate(6 543 182)"/>
   </g>
-  <g fill="none" stroke="#e2e8f2" stroke-width="10" stroke-linecap="round">
-    <path d="M120 -20V350"/><path d="M240 -20V350"/><path d="M360 -20V350"/><path d="M480 -20V350"/>
-    <path d="M-20 80H620"/><path d="M-20 160H620"/><path d="M-20 240H620"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-20 60 C 90 76 168 54 250 74 C 320 92 372 70 440 72" stroke="#e9eef6" stroke-width="6"/>
+    <path d="M60 350 C 92 300 120 274 150 252" stroke="#e9eef6" stroke-width="6"/>
+    <path d="M182 140 C 120 152 60 138 -20 150" stroke="#e2e8f2" stroke-width="8"/>
+    <path d="M300 90 C 298 56 306 26 300 -20" stroke="#e2e8f2" stroke-width="8"/>
+    <path d="M430 132 C 492 120 560 132 620 118" stroke="#e2e8f2" stroke-width="8"/>
+    <path d="M500 236 C 506 276 498 316 506 350" stroke="#e2e8f2" stroke-width="8"/>
+    <path d="M-20 322 C 110 308 240 334 360 318 C 460 306 540 328 620 314" stroke="#d7edf0" stroke-width="11" opacity="0.7"/>
+    <path d="M110 250 C 132 198 150 172 182 140 C 214 108 254 92 300 90 C 356 88 404 102 430 132 C 458 166 488 202 500 236 C 470 262 410 268 350 270 C 268 273 168 286 110 250" stroke="#dbe3ee" stroke-width="11"/>
   </g>
-  <g fill="none" stroke="#edf1f8" stroke-width="5" stroke-linecap="round">
-    <path d="M60 -20V350"/><path d="M540 -20V350"/><path d="M-20 290H620"/>
-  </g>
-  <path class="route-line route-draw" style="--len:1060" d="M120 240 L120 80 L240 80 L360 80 L360 160 L480 160 L480 240 L360 240 Z"/>
+  <path class="route-line route-draw" style="--len:1050" d="M110 250 C 132 198 150 172 182 140 C 214 108 254 92 300 90 C 356 88 404 102 430 132 C 458 166 488 202 500 236 C 470 262 410 268 350 270 C 268 273 168 286 110 250"/>
   <g>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(120,240)"/>
-    <text class="pin-num" x="120" y="220" text-anchor="middle">1</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(120,80)"/>
-    <text class="pin-num" x="120" y="60" text-anchor="middle">2</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(240,80)"/>
-    <text class="pin-num" x="240" y="60" text-anchor="middle">3</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(360,160)"/>
-    <text class="pin-num" x="360" y="140" text-anchor="middle">4</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(480,160)"/>
-    <text class="pin-num" x="480" y="140" text-anchor="middle">5</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(360,240)"/>
-    <text class="pin-num" x="360" y="220" text-anchor="middle">6</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(110,250)"/>
+    <text class="pin-num" x="110" y="230" text-anchor="middle">1</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(182,140)"/>
+    <text class="pin-num" x="182" y="120" text-anchor="middle">2</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(300,90)"/>
+    <text class="pin-num" x="300" y="70" text-anchor="middle">3</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(430,132)"/>
+    <text class="pin-num" x="430" y="112" text-anchor="middle">4</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(500,236)"/>
+    <text class="pin-num" x="500" y="216" text-anchor="middle">5</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(350,270)"/>
+    <text class="pin-num" x="350" y="250" text-anchor="middle">6</text>
   </g>
 </svg>
 <figcaption>One run: the chosen stops, visited in the cheapest order, all fitting inside the working day.</figcaption>
@@ -115,35 +116,35 @@ date. If any one of them can't make it, the visit can't go ahead.
 <svg viewBox="0 0 600 330" role="img" aria-label="A field of candidate stops; the highest-priority ones are taken onto today's route, the rest are scheduled for later">
   <rect x="1" y="1" width="598" height="328" rx="14" fill="#f3f6fb"/>
   <g fill="#e9eef6">
-    <rect x="138" y="96" width="84" height="48" rx="8"/>
-    <rect x="258" y="96" width="84" height="48" rx="8"/>
-    <rect x="138" y="176" width="84" height="48" rx="8"/>
-    <rect x="378" y="176" width="84" height="48" rx="8"/>
-    <rect x="498" y="96" width="40" height="48" rx="8"/>
-    <rect x="498" y="176" width="40" height="48" rx="8"/>
+    <rect x="208" y="160" width="92" height="54" rx="10" transform="rotate(-5 254 187)"/>
+    <rect x="318" y="150" width="70" height="50" rx="10" transform="rotate(5 353 175)"/>
+    <rect x="44" y="200" width="70" height="72" rx="10" transform="rotate(-4 79 236)"/>
+    <rect x="470" y="60" width="86" height="50" rx="10" transform="rotate(4 513 85)"/>
   </g>
-  <g fill="none" stroke="#e2e8f2" stroke-width="10" stroke-linecap="round">
-    <path d="M120 -20V350"/><path d="M240 -20V350"/><path d="M360 -20V350"/><path d="M480 -20V350"/>
-    <path d="M-20 80H620"/><path d="M-20 160H620"/><path d="M-20 240H620"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 350 C 70 300 110 286 140 262" stroke="#e9eef6" stroke-width="6"/>
+    <path d="M620 96 C 548 104 502 122 470 152" stroke="#e9eef6" stroke-width="6"/>
+    <path d="M184 138 C 130 122 70 140 -20 128" stroke="#e2e8f2" stroke-width="8"/>
+    <path d="M300 118 C 300 82 306 48 300 -20" stroke="#e2e8f2" stroke-width="8"/>
+    <path d="M372 212 C 444 206 528 224 620 206" stroke="#e2e8f2" stroke-width="8"/>
+    <path d="M-20 318 C 110 306 230 332 350 318 C 450 306 540 326 620 312" stroke="#d7edf0" stroke-width="11" opacity="0.7"/>
+    <path d="M120 250 C 134 198 152 166 184 138 C 220 108 262 102 300 118 C 344 134 378 172 372 212 C 366 248 346 268 300 270 C 240 273 166 286 120 250" stroke="#dbe3ee" stroke-width="11"/>
   </g>
-  <g fill="none" stroke="#edf1f8" stroke-width="5" stroke-linecap="round">
-    <path d="M60 -20V350"/><path d="M540 -20V350"/><path d="M-20 290H620"/>
-  </g>
-  <path class="route-line route-draw delay" style="--len:820" d="M120 240 L120 80 L240 80 L360 80 L360 160 L360 240 L120 240 Z"/>
+  <path class="route-line route-draw delay" style="--len:720" d="M120 250 C 134 198 152 166 184 138 C 220 108 262 102 300 118 C 344 134 378 172 372 212 C 366 248 346 268 300 270 C 240 273 166 286 120 250"/>
   <g>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(120,240)"/>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(120,80)"/>
-    <use href="#pin" class="pin-hi" width="30" height="42" x="-15" y="-42" transform="translate(240,80)"/>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(360,160)"/>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(360,240)"/>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(120,250)"/>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(184,138)"/>
+    <use href="#pin" class="pin-hi" width="30" height="42" x="-15" y="-42" transform="translate(300,118)"/>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(372,212)"/>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(300,270)"/>
   </g>
   <g opacity="0.92">
-    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(480,80)"/>
-    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(480,160)"/>
-    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(480,240)"/>
-    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(540,80)"/>
-    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(60,160)"/>
-    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(240,160)"/>
+    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(468,118)"/>
+    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(520,210)"/>
+    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(566,150)"/>
+    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(240,300)"/>
+    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(86,140)"/>
+    <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(300,52)"/>
   </g>
 </svg>
 <div class="legend">
