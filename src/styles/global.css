@@ -274,10 +274,13 @@
   --line: #d8e3e4;
   --skip: #b6c2c5;
   --amber: #e8a23d;
-  background: var(--color-brand-50);
-  border: 1px solid var(--color-brand-100);
-  border-radius: 16px;
-  padding: 22px 22px 16px;
+  background: linear-gradient(165deg, #ffffff 0%, var(--color-brand-50) 100%);
+  border: 1px solid rgba(26, 171, 184, 0.12);
+  border-radius: 20px;
+  padding: 18px 18px 14px;
+  box-shadow:
+    0 24px 48px -30px rgba(12, 88, 96, 0.5),
+    0 4px 10px -4px rgba(16, 24, 40, 0.05);
   /* Lazy reveal: hidden until scrolled into view (.in-view added by the
      IntersectionObserver in Layout.astro), then the figure rises in and the
      route + pins animate. */
@@ -297,14 +300,16 @@
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 13px;
 }
 
 .prose-i8 .route-line {
   fill: none;
   stroke: var(--teal);
-  stroke-width: 3.4;
+  stroke-width: 4.2;
   stroke-linecap: round;
   stroke-linejoin: round;
+  filter: drop-shadow(0 2px 3px rgba(20, 137, 154, 0.35));
 }
 
 /* Route line stays hidden until the figure is in view, then draws. */
@@ -329,6 +334,11 @@
   font-weight: 700;
   font-size: 12px;
   fill: #fff;
+}
+
+/* Soft shadow so pins lift off the map. */
+.prose-i8 figure.route-fig use[class*="pin-"] {
+  filter: drop-shadow(0 3px 3px rgba(16, 24, 40, 0.3));
 }
 
 /* Pins + numbers drop in after the route starts tracing, staggered for a
@@ -385,8 +395,14 @@
 }
 
 @keyframes i8-pin-pulse {
-  0%, 100% { filter: drop-shadow(0 0 0 rgba(232, 162, 61, 0)); }
-  50% { filter: drop-shadow(0 0 7px rgba(232, 162, 61, 0.75)); }
+  0%, 100% {
+    filter: drop-shadow(0 3px 3px rgba(16, 24, 40, 0.3));
+  }
+  50% {
+    filter:
+      drop-shadow(0 3px 3px rgba(16, 24, 40, 0.3))
+      drop-shadow(0 0 8px rgba(232, 162, 61, 0.85));
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

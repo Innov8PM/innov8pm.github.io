@@ -43,10 +43,21 @@ you'd still be going the best part of a century later.
 
 <figure class="route-fig">
 <svg viewBox="0 0 600 330" role="img" aria-label="A single planned run: six numbered stops visited in the cheapest order as one loop">
-  <rect x="1" y="1" width="598" height="328" rx="14" fill="#fff" stroke="var(--line)"/>
-  <g stroke="#e7eff0" stroke-width="2">
-    <path d="M0 110 H600"/><path d="M0 220 H600"/>
-    <path d="M200 0 V330"/><path d="M400 0 V330"/>
+  <rect x="1" y="1" width="598" height="328" rx="14" fill="#f3f6fb"/>
+  <g fill="#e9eef6">
+    <rect x="44" y="38" width="92" height="54" rx="9"/>
+    <rect x="250" y="26" width="118" height="58" rx="9"/>
+    <rect x="432" y="44" width="120" height="64" rx="9"/>
+    <rect x="58" y="198" width="108" height="76" rx="9"/>
+    <rect x="470" y="232" width="92" height="64" rx="9"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M-20 300 C 120 286 220 322 340 306 C 450 292 530 320 620 304" stroke="#d7edf0" stroke-width="12" opacity="0.75"/>
+    <path d="M-20 150 C 160 132 360 168 620 146" stroke="#e4eaf4" stroke-width="11"/>
+    <path d="M210 -20 C 226 120 188 220 240 350" stroke="#e4eaf4" stroke-width="9"/>
+    <path d="M430 -20 C 412 120 460 230 442 350" stroke="#e4eaf4" stroke-width="9"/>
+    <path d="M-20 70 C 150 60 360 80 620 66" stroke="#edf1f8" stroke-width="6"/>
+    <path d="M110 -20 V 350" stroke="#edf1f8" stroke-width="6"/>
   </g>
   <path class="route-line route-draw" style="--len:900" d="M150 150 L246 96 L360 70 L470 120 L500 220 L372 256 Z"/>
   <g>
@@ -102,10 +113,21 @@ date. If any one of them can't make it, the visit can't go ahead.
 
 <figure class="route-fig">
 <svg viewBox="0 0 600 330" role="img" aria-label="A field of candidate stops; the highest-priority ones are taken onto today's route, the rest are scheduled for later">
-  <rect x="1" y="1" width="598" height="328" rx="14" fill="#fff" stroke="var(--line)"/>
-  <g stroke="#e7eff0" stroke-width="2">
-    <path d="M0 110 H600"/><path d="M0 220 H600"/>
-    <path d="M200 0 V330"/><path d="M400 0 V330"/>
+  <rect x="1" y="1" width="598" height="328" rx="14" fill="#f3f6fb"/>
+  <g fill="#e9eef6">
+    <rect x="44" y="38" width="92" height="54" rx="9"/>
+    <rect x="250" y="26" width="118" height="58" rx="9"/>
+    <rect x="432" y="44" width="120" height="64" rx="9"/>
+    <rect x="58" y="198" width="108" height="76" rx="9"/>
+    <rect x="470" y="232" width="92" height="64" rx="9"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M-20 300 C 120 286 220 322 340 306 C 450 292 530 320 620 304" stroke="#d7edf0" stroke-width="12" opacity="0.75"/>
+    <path d="M-20 150 C 160 132 360 168 620 146" stroke="#e4eaf4" stroke-width="11"/>
+    <path d="M210 -20 C 226 120 188 220 240 350" stroke="#e4eaf4" stroke-width="9"/>
+    <path d="M430 -20 C 412 120 460 230 442 350" stroke="#e4eaf4" stroke-width="9"/>
+    <path d="M-20 70 C 150 60 360 80 620 66" stroke="#edf1f8" stroke-width="6"/>
+    <path d="M110 -20 V 350" stroke="#edf1f8" stroke-width="6"/>
   </g>
   <path class="route-line route-draw delay" style="--len:720" d="M168 168 L262 118 L382 104 L468 168 L360 238 Z"/>
   <g>
