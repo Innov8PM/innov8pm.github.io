@@ -268,12 +268,12 @@
    the brand palette so the figures stay on-brand. Pins reuse a shared
    <symbol id="pin"> defined once in the page. */
 .prose-i8 figure.route-fig {
-  --teal: #6366f1;
-  --teal-d: #4f46e5;
-  --teal-dd: #3730a3;
+  --teal: #16a34a;
+  --teal-d: #15803d;
+  --teal-dd: #166534;
   --line: #d8e3e4;
   --skip: #94a3b8;
-  --amber: #f43f5e;
+  --amber: #e8a23d;
   background: linear-gradient(165deg, #ffffff 0%, var(--color-brand-50) 100%);
   border: 1px solid rgba(26, 171, 184, 0.12);
   border-radius: 20px;
@@ -332,13 +332,13 @@
 .prose-i8 .pin-num {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 12px;
-  fill: #fff;
+  font-size: 11px;
+  fill: var(--color-charcoal);
 }
 
 /* Soft shadow so pins lift off the map. */
 .prose-i8 figure.route-fig use[class*="pin-"] {
-  filter: drop-shadow(0 3px 3px rgba(16, 24, 40, 0.3));
+  filter: drop-shadow(0 2px 2px rgba(16, 24, 40, 0.28));
 }
 
 /* Pins + numbers drop in after the route starts tracing, staggered for a
@@ -396,12 +396,12 @@
 
 @keyframes i8-pin-pulse {
   0%, 100% {
-    filter: drop-shadow(0 3px 3px rgba(16, 24, 40, 0.3));
+    filter: drop-shadow(0 2px 2px rgba(16, 24, 40, 0.28));
   }
   50% {
     filter:
-      drop-shadow(0 3px 3px rgba(16, 24, 40, 0.3))
-      drop-shadow(0 0 8px rgba(244, 63, 94, 0.85));
+      drop-shadow(0 2px 2px rgba(16, 24, 40, 0.28))
+      drop-shadow(0 0 9px rgba(232, 162, 61, 0.9));
   }
 }
 
