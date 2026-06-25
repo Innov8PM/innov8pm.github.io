@@ -8,6 +8,12 @@ deploys to GitHub Pages via `.github/workflows/deploy.yml` on push to `main`.
 - Brand tokens live in `src/styles/global.css` (`@theme`): `brand-50…950`,
   `charcoal`, fonts `Outfit` (display/headings) + `DM Sans` (body). Never
   hardcode hex in components — use the `brand-*` / `charcoal` Tailwind utilities.
+- **Restart `npm run dev` after editing files that feed `getStaticPaths`** —
+  `src/authors.ts`, `src/content.config.ts`, and the `getStaticPaths`/frontmatter
+  inputs to the dynamic routes (`blog/[...slug]`, `blog/tag/[tag]`,
+  `blog/author/[slug]`). These don't hot-reload reliably, so the running dev
+  server can show stale output even though `npm run build` is correct. Editing
+  a post's Markdown body or a component hot-reloads fine.
 
 ## Blog
 
