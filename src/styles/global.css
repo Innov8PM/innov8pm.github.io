@@ -305,11 +305,11 @@
 
 .prose-i8 .route-line {
   fill: none;
-  stroke: var(--teal);
-  stroke-width: 4.2;
+  stroke: #512da8;
+  stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
-  filter: drop-shadow(0 2px 3px rgba(20, 137, 154, 0.35));
+  filter: drop-shadow(0 2px 3px rgba(81, 45, 168, 0.35));
 }
 
 /* Route line stays hidden until the figure is in view, then draws. */
