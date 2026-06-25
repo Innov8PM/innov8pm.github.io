@@ -22,7 +22,14 @@ const dateFmt = new Intl.DateTimeFormat('en-GB', {
 })
 ---
 
-<Layout title={`${post.data.title} — Innov-8`} description={post.data.description}>
+<Layout
+  title={`${post.data.title} — Innov-8`}
+  description={post.data.description}
+  image={`/og/${post.id}.png`}
+  type="article"
+  publishedDate={post.data.pubDate}
+  tags={post.data.tags}
+>
   <Nav />
 
   <main class="pt-40 pb-24 md:pb-32">
