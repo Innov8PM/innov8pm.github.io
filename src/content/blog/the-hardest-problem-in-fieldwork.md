@@ -65,18 +65,18 @@ you'd still be going the best part of a century later.
   </g>
   <path class="route-line route-draw" style="--len:1090" d="M100 175 C 122 146 158 124 190 110 C 230 122 272 140 300 150 C 300 190 280 218 250 235 C 300 228 364 222 410 210 C 444 198 472 160 490 120 C 470 78 360 70 240 84 C 170 92 120 130 100 175"/>
   <g>
-    <use href="#pin" class="pin-route" width="13" height="18" x="-6.5" y="-18" transform="translate(100,175)"/>
-    <text class="pin-num" x="100" y="155" text-anchor="middle">1</text>
-    <use href="#pin" class="pin-route" width="13" height="18" x="-6.5" y="-18" transform="translate(190,110)"/>
-    <text class="pin-num" x="190" y="90" text-anchor="middle">2</text>
-    <use href="#pin" class="pin-route" width="13" height="18" x="-6.5" y="-18" transform="translate(300,150)"/>
-    <text class="pin-num" x="300" y="130" text-anchor="middle">3</text>
-    <use href="#pin" class="pin-route" width="13" height="18" x="-6.5" y="-18" transform="translate(250,235)"/>
-    <text class="pin-num" x="250" y="215" text-anchor="middle">4</text>
-    <use href="#pin" class="pin-route" width="13" height="18" x="-6.5" y="-18" transform="translate(410,210)"/>
-    <text class="pin-num" x="410" y="190" text-anchor="middle">5</text>
-    <use href="#pin" class="pin-route" width="13" height="18" x="-6.5" y="-18" transform="translate(490,120)"/>
-    <text class="pin-num" x="490" y="100" text-anchor="middle">6</text>
+    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(100,175)"/>
+    <text class="pin-num" x="100" y="149" text-anchor="middle">1</text>
+    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(190,110)"/>
+    <text class="pin-num" x="190" y="84" text-anchor="middle">2</text>
+    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(300,150)"/>
+    <text class="pin-num" x="300" y="124" text-anchor="middle">3</text>
+    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(250,235)"/>
+    <text class="pin-num" x="250" y="209" text-anchor="middle">4</text>
+    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(410,210)"/>
+    <text class="pin-num" x="410" y="184" text-anchor="middle">5</text>
+    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(490,120)"/>
+    <text class="pin-num" x="490" y="94" text-anchor="middle">6</text>
   </g>
 </svg>
 <figcaption>One run: the chosen stops, visited in the cheapest order, all fitting inside the working day.</figcaption>
@@ -137,19 +137,19 @@ date. If any one of them can't make it, the visit can't go ahead.
   </g>
   <path class="route-line route-draw delay" style="--len:870" d="M110 260 C 150 240 178 222 200 200 C 226 174 240 144 260 120 C 308 132 360 138 400 150 C 440 162 452 210 440 250 C 380 280 220 290 110 260"/>
   <g>
-    <use href="#pin" class="pin-route" width="13" height="18" x="-6.5" y="-18" transform="translate(110,260)"/>
-    <use href="#pin" class="pin-route" width="13" height="18" x="-6.5" y="-18" transform="translate(200,200)"/>
+    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(110,260)"/>
+    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(200,200)"/>
     <use href="#pin" class="pin-hi" width="34" height="47" x="-17" y="-47" transform="translate(260,120)"/>
-    <use href="#pin" class="pin-route" width="13" height="18" x="-6.5" y="-18" transform="translate(400,150)"/>
-    <use href="#pin" class="pin-route" width="13" height="18" x="-6.5" y="-18" transform="translate(440,250)"/>
+    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(400,150)"/>
+    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(440,250)"/>
   </g>
   <g opacity="0.92">
-    <use href="#pin" class="pin-skip" width="11" height="15" x="-5.5" y="-15" transform="translate(330,62)"/>
-    <use href="#pin" class="pin-skip" width="11" height="15" x="-5.5" y="-15" transform="translate(470,108)"/>
-    <use href="#pin" class="pin-skip" width="11" height="15" x="-5.5" y="-15" transform="translate(525,196)"/>
-    <use href="#pin" class="pin-skip" width="11" height="15" x="-5.5" y="-15" transform="translate(360,305)"/>
-    <use href="#pin" class="pin-skip" width="11" height="15" x="-5.5" y="-15" transform="translate(74,190)"/>
-    <use href="#pin" class="pin-skip" width="11" height="15" x="-5.5" y="-15" transform="translate(180,300)"/>
+    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(330,62)"/>
+    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(470,108)"/>
+    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(525,196)"/>
+    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(360,305)"/>
+    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(74,190)"/>
+    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(180,300)"/>
   </g>
 </svg>
 <div class="legend">
