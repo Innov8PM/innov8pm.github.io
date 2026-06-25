@@ -23,7 +23,11 @@ If the user hasn't already supplied it, ask for (batch the questions):
    forecasting, UK field services — energy & water). No hype, no emoji.
 4. **Tags** — 1–3, kebab-case (e.g. `panel-management`, `announcements`,
    `forecasting`). Optional.
-5. **Author** — defaults to `Innov-8` if not given.
+5. **Author** — a slug from `src/authors.ts` (e.g. `mike-wolfenden`), not a
+   display name. Defaults to `innov8`. If the user names an author who isn't in
+   `src/authors.ts` yet, add them first: ask for a square headshot, save it to
+   `public/images/<slug>.png`, and add an `AUTHORS` entry (name, avatar, and
+   optionally role/bio). The build fails on an unknown author slug.
 6. **Draft?** — if the user is not ready to publish, set `draft: true` (it won't
    appear anywhere or build a route until flipped to `false`).
 
@@ -44,7 +48,7 @@ Write to `src/content/blog/<slug>.md` with exactly this frontmatter shape
 title: <title>
 description: <summary>
 pubDate: <YYYY-MM-DD>
-author: <author>            # omit to default to Innov-8
+author: <author-slug>       # key from src/authors.ts; omit to default to innov8
 tags:
   - <tag>
 draft: false                # or true while drafting

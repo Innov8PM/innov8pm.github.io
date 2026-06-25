@@ -2,7 +2,7 @@
 title: Welcome to the Innov-8 blog
 description: A first look at what we'll be writing about — panel management, data-driven allocation, and the future of UK field services.
 pubDate: 2026-06-25
-author: Innov-8
+author: mike-wolfenden
 tags:
   - announcements
   - panel-management

@@ -24,11 +24,18 @@ no database.
   description: string           # required — also used for cards, <meta>, RSS
   pubDate: YYYY-MM-DD            # required
   updatedDate: YYYY-MM-DD       # optional
-  author: string                # optional, defaults to "Innov-8"
+  author: slug                  # optional slug into src/authors.ts; defaults to "innov8"
   tags: [string, ...]           # optional, defaults to []
   draft: boolean                # optional, defaults to false
   ---
   ```
+
+- **Authors** live in `src/authors.ts` (name, optional avatar, role, bio). The
+  `author` frontmatter value is a *slug* (a key in that file, e.g.
+  `mike-wolfenden`), not a display name — the build fails on an unknown slug.
+  To add a writer: drop a square headshot in `public/images/<slug>.png` and add
+  an entry to `AUTHORS`. The byline avatar + name renders on the post page; a
+  "Written by" footer card appears when the author has a `bio`.
 
 - `draft: true` excludes a post from `/blog`, its own page, and `/rss.xml`
   (it won't build a route at all).
