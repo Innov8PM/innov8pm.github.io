@@ -8,12 +8,15 @@ export interface Author {
   role?: string
   /** Optional short bio shown in the post footer. */
   bio?: string
+  /** Optional LinkedIn profile URL. */
+  linkedin?: string
 }
 
 export const AUTHORS = {
   'mike-wolfenden': {
     name: 'Mike Wolfenden',
     avatar: '/images/mike-wolfenden.png',
+    linkedin: 'https://www.linkedin.com/in/mike-wolfenden-2120a216/',
   },
   innov8: {
     name: 'Innov-8',

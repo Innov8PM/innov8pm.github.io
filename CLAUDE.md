@@ -30,12 +30,13 @@ no database.
   ---
   ```
 
-- **Authors** live in `src/authors.ts` (name, optional avatar, role, bio). The
+- **Authors** live in `src/authors.ts` (name, optional avatar, role, bio,
+  linkedin). The
   `author` frontmatter value is a *slug* (a key in that file, e.g.
   `mike-wolfenden`), not a display name — the build fails on an unknown slug.
   To add a writer: drop a square headshot in `public/images/<slug>.png` and add
-  an entry to `AUTHORS`. The byline avatar + name renders on the post page; a
-  "Written by" footer card appears when the author has a `bio`.
+  an entry to `AUTHORS`. A "Written by" card (avatar, name, date, optional role,
+  LinkedIn link, and bio) renders at the **bottom** of each post.
 
 - `draft: true` excludes a post from `/blog`, its own page, and `/rss.xml`
   (it won't build a route at all).
