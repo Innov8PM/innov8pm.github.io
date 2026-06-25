@@ -28,8 +28,29 @@ If the user hasn't already supplied it, ask for (batch the questions):
    `src/authors.ts` yet, add them first: ask for a square headshot, save it to
    `public/images/<slug>.png`, and add an `AUTHORS` entry (name, avatar, and
    optionally role/bio). The build fails on an unknown author slug.
-6. **Draft?** — if the user is not ready to publish, set `draft: true` (it won't
+6. **Cover image** — optional, but encouraged. A banner shown atop the post and
+   as the listing thumbnail. If the user has one, save it under
+   `public/images/posts/<slug>/` and set `cover` (+ `coverAlt`). Landscape
+   (~16:9) works best.
+7. **Draft?** — if the user is not ready to publish, set `draft: true` (it won't
    appear anywhere or build a route until flipped to `false`).
+
+**Actively encourage visuals.** Posts read far better with pictures and
+diagrams. Prompt the user for a cover image, and for any process/flow described
+in the body, suggest a diagram. Store images under `public/images/posts/<slug>/`
+and reference with an absolute path. For a captioned image or diagram, use an
+HTML figure in the Markdown body (export diagrams as SVG where possible):
+
+```html
+<figure>
+  <img src="/images/posts/<slug>/diagram.svg" alt="Real description" />
+  <figcaption>Short caption.</figcaption>
+</figure>
+```
+
+Never ship an image reference whose file doesn't exist (it renders broken). If
+the user wants a visual but has no file yet, leave a clear TODO rather than a
+dead path. Every image needs real `alt` text.
 
 Derive the **slug** from the title: lowercase, hyphenated, stop-words trimmed,
 no trailing punctuation. Confirm it with the user if ambiguous. If a file with
@@ -51,6 +72,8 @@ pubDate: <YYYY-MM-DD>
 author: <author-slug>       # key from src/authors.ts; omit to default to innov8
 tags:
   - <tag>
+cover: /images/posts/<slug>/cover.jpg   # optional banner + thumbnail
+coverAlt: <alt text>                     # optional, with cover
 draft: false                # or true while drafting
 ---
 

@@ -16,6 +16,10 @@ const blog = defineCollection({
     author: z.enum(authorSlugs).default('innov8'),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
+    // Optional cover image: shown as a banner atop the post and as the
+    // thumbnail on listing cards. Path under /public, e.g. '/images/posts/x.jpg'.
+    cover: z.string().optional(),
+    coverAlt: z.string().optional(),
   }),
 })
 

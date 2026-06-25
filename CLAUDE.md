@@ -27,8 +27,15 @@ no database.
   author: slug                  # optional slug into src/authors.ts; defaults to "innov8"
   tags: [string, ...]           # optional, defaults to []
   draft: boolean                # optional, defaults to false
+  cover: /images/posts/x.jpg    # optional banner + listing thumbnail
+  coverAlt: string              # optional alt text for the cover
   ---
   ```
+
+- **Tags are links.** Each tag links to `/blog/tag/<slug>` (auto-generated
+  archive of posts with that tag). The author byline links to
+  `/blog/author/<slug>`. Both archive pages are built automatically — no manual
+  page needed.
 
 - **Authors** live in `src/authors.ts` (name, optional avatar, role, bio,
   linkedin). The
@@ -43,6 +50,27 @@ no database.
 - Body is standard Markdown. Headings start at `##` (the `#`/h1 is rendered from
   `title`). Article styling comes from the `.prose-i8` class in `global.css` —
   no typography plugin.
+
+### Images & diagrams (encouraged)
+
+Posts read better with visuals. Store post images under
+`public/images/posts/<slug>/` and reference them with an absolute path.
+
+- **Plain image:** `![Alt text](/images/posts/my-post/chart.png)` — a standalone
+  image is centred and rounded automatically.
+- **Image with caption / diagrams:** use an HTML figure (Markdown allows inline
+  HTML). Export diagrams as **SVG** (crisp at any size) or PNG and embed them
+  the same way:
+
+  ```html
+  <figure>
+    <img src="/images/posts/my-post/allocation-flow.svg" alt="How a case flows from intake to the best-ranked agency" />
+    <figcaption>Cases are allocated by postcode-level performance ranking.</figcaption>
+  </figure>
+  ```
+
+  `.prose-i8 figure` / `figcaption` styling centres the image and styles the
+  caption. Always give images real `alt` text.
 - Pages: listing `src/pages/blog/index.astro`, post `src/pages/blog/[...slug].astro`,
   feed `src/pages/rss.xml.js`.
 

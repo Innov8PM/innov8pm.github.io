@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro'
 import Nav from '../../components/Nav.astro'
 import Footer from '../../components/Footer.astro'
 import { getAuthor } from '../../authors'
+import { slugify } from '../../utils'
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft)
@@ -47,6 +48,17 @@ const dateFmt = new Intl.DateTimeFormat('en-GB', {
         All posts
       </a>
 
+      {
+        post.data.cover && (
+          <img
+            src={post.data.cover}
+            alt={post.data.coverAlt ?? post.data.title}
+            class="w-full aspect-[16/9] object-cover rounded-2xl mb-10"
+            loading="eager"
+          />
+        )
+      }
+
       <header class="mb-10 pb-10 border-b border-gray-100">
         <h1 class="text-3xl md:text-[2.75rem] font-bold tracking-[-0.02em] text-charcoal leading-tight font-display">
           {post.data.title}
@@ -58,9 +70,12 @@ const dateFmt = new Intl.DateTimeFormat('en-GB', {
           post.data.tags.length > 0 && (
             <div class="mt-6 flex flex-wrap gap-2">
               {post.data.tags.map((tag) => (
-                <span class="inline-flex items-center px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-xs font-medium">
+                <a
+                  href={`/blog/tag/${slugify(tag)}/`}
+                  class="inline-flex items-center px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-xs font-medium hover:bg-brand-100 transition-colors duration-300"
+                >
                   {tag}
-                </span>
+                </a>
               ))}
             </div>
           )
@@ -95,7 +110,9 @@ const dateFmt = new Intl.DateTimeFormat('en-GB', {
           </p>
           <div class="mt-1 flex items-center gap-3 flex-wrap">
             <p class="text-base font-bold text-charcoal font-display">
-              {author.name}
+              <a href={`/blog/author/${post.data.author}/`} class="hover:text-brand-600 transition-colors duration-300">
+                {author.name}
+              </a>
               {author.role && <span class="text-charcoal-light font-normal">&nbsp;&middot; {author.role}</span>}
             </p>
             {
