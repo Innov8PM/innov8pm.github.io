@@ -64,22 +64,22 @@ you'd still be going the best part of a century later.
     <path d="M430 132 C 492 120 560 132 620 118" stroke="#e2e8f2" stroke-width="8"/>
     <path d="M500 236 C 506 276 498 316 506 350" stroke="#e2e8f2" stroke-width="8"/>
     <path d="M-20 322 C 110 308 240 334 360 318 C 460 306 540 328 620 314" stroke="#d7edf0" stroke-width="11" opacity="0.7"/>
-    <path d="M110 250 C 132 198 150 172 182 140 C 214 108 254 92 300 90 C 356 88 404 102 430 132 C 458 166 488 202 500 236 C 470 262 410 268 350 270 C 268 273 168 286 110 250" stroke="#dbe3ee" stroke-width="11"/>
+    <path d="M110 255 C 116 214 120 184 130 150 C 150 130 200 122 240 120 C 270 118 262 176 250 215 C 296 206 344 196 380 180 C 414 162 446 130 470 100 C 512 150 520 232 470 270 C 380 300 198 302 110 255" stroke="#dbe3ee" stroke-width="11"/>
   </g>
-  <path class="route-line route-draw" style="--len:1050" d="M110 250 C 132 198 150 172 182 140 C 214 108 254 92 300 90 C 356 88 404 102 430 132 C 458 166 488 202 500 236 C 470 262 410 268 350 270 C 268 273 168 286 110 250"/>
+  <path class="route-line route-draw" style="--len:1180" d="M110 255 C 116 214 120 184 130 150 C 150 130 200 122 240 120 C 270 118 262 176 250 215 C 296 206 344 196 380 180 C 414 162 446 130 470 100 C 512 150 520 232 470 270 C 380 300 198 302 110 255"/>
   <g>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(110,250)"/>
-    <text class="pin-num" x="110" y="230" text-anchor="middle">1</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(182,140)"/>
-    <text class="pin-num" x="182" y="120" text-anchor="middle">2</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(300,90)"/>
-    <text class="pin-num" x="300" y="70" text-anchor="middle">3</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(430,132)"/>
-    <text class="pin-num" x="430" y="112" text-anchor="middle">4</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(500,236)"/>
-    <text class="pin-num" x="500" y="216" text-anchor="middle">5</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(350,270)"/>
-    <text class="pin-num" x="350" y="250" text-anchor="middle">6</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(110,255)"/>
+    <text class="pin-num" x="110" y="235" text-anchor="middle">1</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(130,150)"/>
+    <text class="pin-num" x="130" y="130" text-anchor="middle">2</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(240,120)"/>
+    <text class="pin-num" x="240" y="100" text-anchor="middle">3</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(250,215)"/>
+    <text class="pin-num" x="250" y="195" text-anchor="middle">4</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(380,180)"/>
+    <text class="pin-num" x="380" y="160" text-anchor="middle">5</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(470,100)"/>
+    <text class="pin-num" x="470" y="80" text-anchor="middle">6</text>
   </g>
 </svg>
 <figcaption>One run: the chosen stops, visited in the cheapest order, all fitting inside the working day.</figcaption>
@@ -140,15 +140,15 @@ date. If any one of them can't make it, the visit can't go ahead.
     <path d="M300 118 C 300 82 306 48 300 -20" stroke="#e2e8f2" stroke-width="8"/>
     <path d="M372 212 C 444 206 528 224 620 206" stroke="#e2e8f2" stroke-width="8"/>
     <path d="M-20 318 C 110 306 230 332 350 318 C 450 306 540 326 620 312" stroke="#d7edf0" stroke-width="11" opacity="0.7"/>
-    <path d="M120 250 C 134 198 152 166 184 138 C 220 108 262 102 300 118 C 344 134 378 172 372 212 C 366 248 346 268 300 270 C 240 273 166 286 120 250" stroke="#dbe3ee" stroke-width="11"/>
+    <path d="M120 255 C 126 214 132 184 150 150 C 170 128 220 120 260 115 C 290 112 282 168 290 205 C 326 196 372 172 400 150 C 440 178 446 232 396 264 C 320 292 196 296 120 255" stroke="#dbe3ee" stroke-width="11"/>
   </g>
-  <path class="route-line route-draw delay" style="--len:720" d="M120 250 C 134 198 152 166 184 138 C 220 108 262 102 300 118 C 344 134 378 172 372 212 C 366 248 346 268 300 270 C 240 273 166 286 120 250"/>
+  <path class="route-line route-draw delay" style="--len:910" d="M120 255 C 126 214 132 184 150 150 C 170 128 220 120 260 115 C 290 112 282 168 290 205 C 326 196 372 172 400 150 C 440 178 446 232 396 264 C 320 292 196 296 120 255"/>
   <g>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(120,250)"/>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(184,138)"/>
-    <use href="#pin" class="pin-hi" width="30" height="42" x="-15" y="-42" transform="translate(300,118)"/>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(372,212)"/>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(300,270)"/>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(120,255)"/>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(150,150)"/>
+    <use href="#pin" class="pin-hi" width="30" height="42" x="-15" y="-42" transform="translate(260,115)"/>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(290,205)"/>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(400,150)"/>
   </g>
   <g opacity="0.92">
     <use href="#pin" class="pin-skip" width="22" height="31" x="-11" y="-31" transform="translate(468,118)"/>
