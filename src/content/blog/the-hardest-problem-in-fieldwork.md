@@ -45,41 +45,38 @@ you'd still be going the best part of a century later.
 <svg viewBox="0 0 600 330" role="img" aria-label="A single planned run: six numbered stops visited in the cheapest order as one loop">
   <rect x="1" y="1" width="598" height="328" rx="14" fill="#f3f6fb"/>
   <g fill="#e9eef6">
-    <rect x="216" y="150" width="92" height="56" rx="10" transform="rotate(-5 262 178)"/>
-    <rect x="340" y="138" width="96" height="52" rx="10" transform="rotate(4 388 164)"/>
-    <rect x="48" y="48" width="84" height="50" rx="10" transform="rotate(-3 90 73)"/>
-    <rect x="512" y="150" width="62" height="64" rx="10" transform="rotate(6 543 182)"/>
+    <rect x="296" y="140" width="92" height="52" rx="10" transform="rotate(4 342 166)"/>
+    <rect x="176" y="150" width="70" height="48" rx="10" transform="rotate(-6 211 174)"/>
+    <rect x="40" y="46" width="80" height="48" rx="10" transform="rotate(-3 80 70)"/>
+    <rect x="520" y="178" width="62" height="64" rx="10" transform="rotate(6 551 210)"/>
   </g>
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M-20 60 C 90 76 168 54 250 74 C 320 92 372 70 440 72" stroke="#e9eef6" stroke-width="6"/>
-    <path d="M60 350 C 92 300 120 274 150 252" stroke="#e9eef6" stroke-width="6"/>
-    <path d="M-20 200 C 110 184 196 224 300 206 C 404 188 512 216 620 192" stroke="#e9eef6" stroke-width="6"/>
-    <path d="M250 -20 C 250 26 234 52 206 76" stroke="#edf1f8" stroke-width="5"/>
-    <path d="M40 -20 C 54 70 40 150 72 248" stroke="#edf1f8" stroke-width="5"/>
-    <path d="M520 350 C 526 304 502 282 472 266" stroke="#edf1f8" stroke-width="5"/>
-    <path d="M360 300 C 396 286 420 264 432 236" stroke="#edf1f8" stroke-width="5"/>
-    <path d="M-20 252 C 60 246 96 238 132 248" stroke="#edf1f8" stroke-width="4"/>
-    <path d="M182 140 C 120 152 60 138 -20 150" stroke="#e2e8f2" stroke-width="8"/>
-    <path d="M300 90 C 298 56 306 26 300 -20" stroke="#e2e8f2" stroke-width="8"/>
-    <path d="M430 132 C 492 120 560 132 620 118" stroke="#e2e8f2" stroke-width="8"/>
-    <path d="M500 236 C 506 276 498 316 506 350" stroke="#e2e8f2" stroke-width="8"/>
-    <path d="M-20 322 C 110 308 240 334 360 318 C 460 306 540 328 620 314" stroke="#d7edf0" stroke-width="11" opacity="0.7"/>
-    <path d="M110 255 C 116 214 120 184 130 150 C 150 130 200 122 240 120 C 270 118 262 176 250 215 C 296 206 344 196 380 180 C 414 162 446 130 470 100 C 512 150 520 232 470 270 C 380 300 198 302 110 255" stroke="#dbe3ee" stroke-width="11"/>
+    <path d="M-20 70 C 120 84 240 62 360 78 C 460 92 540 74 620 84" stroke="#e9eef6" stroke-width="6"/>
+    <path d="M-20 278 C 120 266 260 290 380 276 C 480 264 560 284 620 274" stroke="#e9eef6" stroke-width="6"/>
+    <path d="M150 350 C 158 300 142 270 120 248" stroke="#edf1f8" stroke-width="5"/>
+    <path d="M360 350 C 366 300 352 268 344 232" stroke="#edf1f8" stroke-width="5"/>
+    <path d="M-20 150 C 56 146 92 150 128 162" stroke="#edf1f8" stroke-width="4"/>
+    <path d="M190 110 C 192 74 184 40 190 -20" stroke="#e2e8f2" stroke-width="8"/>
+    <path d="M490 120 C 540 112 580 122 620 110" stroke="#e2e8f2" stroke-width="8"/>
+    <path d="M410 210 C 414 250 402 290 410 350" stroke="#e2e8f2" stroke-width="8"/>
+    <path d="M100 175 C 60 178 20 172 -20 180" stroke="#e2e8f2" stroke-width="8"/>
+    <path d="M-20 320 C 110 308 240 332 360 318 C 460 306 540 326 620 314" stroke="#d7edf0" stroke-width="11" opacity="0.7"/>
+    <path d="M100 175 C 122 146 158 124 190 110 C 230 122 272 140 300 150 C 300 190 280 218 250 235 C 300 228 364 222 410 210 C 444 198 472 160 490 120 C 470 78 360 70 240 84 C 170 92 120 130 100 175" stroke="#dbe3ee" stroke-width="11"/>
   </g>
-  <path class="route-line route-draw" style="--len:1180" d="M110 255 C 116 214 120 184 130 150 C 150 130 200 122 240 120 C 270 118 262 176 250 215 C 296 206 344 196 380 180 C 414 162 446 130 470 100 C 512 150 520 232 470 270 C 380 300 198 302 110 255"/>
+  <path class="route-line route-draw" style="--len:1090" d="M100 175 C 122 146 158 124 190 110 C 230 122 272 140 300 150 C 300 190 280 218 250 235 C 300 228 364 222 410 210 C 444 198 472 160 490 120 C 470 78 360 70 240 84 C 170 92 120 130 100 175"/>
   <g>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(110,255)"/>
-    <text class="pin-num" x="110" y="235" text-anchor="middle">1</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(130,150)"/>
-    <text class="pin-num" x="130" y="130" text-anchor="middle">2</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(240,120)"/>
-    <text class="pin-num" x="240" y="100" text-anchor="middle">3</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(250,215)"/>
-    <text class="pin-num" x="250" y="195" text-anchor="middle">4</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(380,180)"/>
-    <text class="pin-num" x="380" y="160" text-anchor="middle">5</text>
-    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(470,100)"/>
-    <text class="pin-num" x="470" y="80" text-anchor="middle">6</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(100,175)"/>
+    <text class="pin-num" x="100" y="155" text-anchor="middle">1</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(190,110)"/>
+    <text class="pin-num" x="190" y="90" text-anchor="middle">2</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(300,150)"/>
+    <text class="pin-num" x="300" y="130" text-anchor="middle">3</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(250,235)"/>
+    <text class="pin-num" x="250" y="215" text-anchor="middle">4</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(410,210)"/>
+    <text class="pin-num" x="410" y="190" text-anchor="middle">5</text>
+    <use href="#pin" class="pin-route" width="26" height="37" x="-13" y="-37" transform="translate(490,120)"/>
+    <text class="pin-num" x="490" y="100" text-anchor="middle">6</text>
   </g>
 </svg>
 <figcaption>One run: the chosen stops, visited in the cheapest order, all fitting inside the working day.</figcaption>
