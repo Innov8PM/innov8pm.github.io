@@ -43,25 +43,25 @@ you'd still be going the best part of a century later.
 
 <figure class="route-fig">
 <svg viewBox="0 0 600 330" role="img" aria-label="A single planned run: six numbered stops visited in the cheapest order as one loop">
-  <rect x="1" y="1" width="598" height="328" rx="14" fill="#f3f6fb"/>
-  <g fill="#e9eef6">
+  <rect x="1" y="1" width="598" height="328" rx="14" fill="#f4f5fb"/>
+  <g fill="#ececf5">
     <rect x="296" y="140" width="92" height="52" rx="10" transform="rotate(4 342 166)"/>
     <rect x="176" y="150" width="70" height="48" rx="10" transform="rotate(-6 211 174)"/>
     <rect x="40" y="46" width="80" height="48" rx="10" transform="rotate(-3 80 70)"/>
     <rect x="520" y="178" width="62" height="64" rx="10" transform="rotate(6 551 210)"/>
   </g>
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M-20 70 C 120 84 240 62 360 78 C 460 92 540 74 620 84" stroke="#e9eef6" stroke-width="6"/>
-    <path d="M-20 278 C 120 266 260 290 380 276 C 480 264 560 284 620 274" stroke="#e9eef6" stroke-width="6"/>
-    <path d="M150 350 C 158 300 142 270 120 248" stroke="#edf1f8" stroke-width="5"/>
-    <path d="M360 350 C 366 300 352 268 344 232" stroke="#edf1f8" stroke-width="5"/>
-    <path d="M-20 150 C 56 146 92 150 128 162" stroke="#edf1f8" stroke-width="4"/>
-    <path d="M190 110 C 192 74 184 40 190 -20" stroke="#e2e8f2" stroke-width="8"/>
-    <path d="M490 120 C 540 112 580 122 620 110" stroke="#e2e8f2" stroke-width="8"/>
-    <path d="M410 210 C 414 250 402 290 410 350" stroke="#e2e8f2" stroke-width="8"/>
-    <path d="M100 175 C 60 178 20 172 -20 180" stroke="#e2e8f2" stroke-width="8"/>
-    <path d="M-20 320 C 110 308 240 332 360 318 C 460 306 540 326 620 314" stroke="#d7edf0" stroke-width="11" opacity="0.7"/>
-    <path d="M100 175 C 122 146 158 124 190 110 C 230 122 272 140 300 150 C 300 190 280 218 250 235 C 300 228 364 222 410 210 C 444 198 472 160 490 120 C 470 78 360 70 240 84 C 170 92 120 130 100 175" stroke="#dbe3ee" stroke-width="11"/>
+    <path d="M-20 70 C 120 84 240 62 360 78 C 460 92 540 74 620 84" stroke="#ececf5" stroke-width="6"/>
+    <path d="M-20 278 C 120 266 260 290 380 276 C 480 264 560 284 620 274" stroke="#ececf5" stroke-width="6"/>
+    <path d="M150 350 C 158 300 142 270 120 248" stroke="#efeff7" stroke-width="5"/>
+    <path d="M360 350 C 366 300 352 268 344 232" stroke="#efeff7" stroke-width="5"/>
+    <path d="M-20 150 C 56 146 92 150 128 162" stroke="#efeff7" stroke-width="4"/>
+    <path d="M190 110 C 192 74 184 40 190 -20" stroke="#e5e5f1" stroke-width="8"/>
+    <path d="M490 120 C 540 112 580 122 620 110" stroke="#e5e5f1" stroke-width="8"/>
+    <path d="M410 210 C 414 250 402 290 410 350" stroke="#e5e5f1" stroke-width="8"/>
+    <path d="M100 175 C 60 178 20 172 -20 180" stroke="#e5e5f1" stroke-width="8"/>
+    <path d="M-20 320 C 110 308 240 332 360 318 C 460 306 540 326 620 314" stroke="#d9e3fb" stroke-width="11" opacity="0.7"/>
+    <path d="M100 175 C 122 146 158 124 190 110 C 230 122 272 140 300 150 C 300 190 280 218 250 235 C 300 228 364 222 410 210 C 444 198 472 160 490 120 C 470 78 360 70 240 84 C 170 92 120 130 100 175" stroke="#e0e0f0" stroke-width="11"/>
   </g>
   <path class="route-line route-draw" style="--len:1090" d="M100 175 C 122 146 158 124 190 110 C 230 122 272 140 300 150 C 300 190 280 218 250 235 C 300 228 364 222 410 210 C 444 198 472 160 490 120 C 470 78 360 70 240 84 C 170 92 120 130 100 175"/>
   <g>
@@ -117,23 +117,23 @@ date. If any one of them can't make it, the visit can't go ahead.
 
 <figure class="route-fig">
 <svg viewBox="0 0 600 330" role="img" aria-label="A field of candidate stops; the highest-priority ones are taken onto today's route, the rest are scheduled for later">
-  <rect x="1" y="1" width="598" height="328" rx="14" fill="#f3f6fb"/>
-  <g fill="#e9eef6">
+  <rect x="1" y="1" width="598" height="328" rx="14" fill="#f4f5fb"/>
+  <g fill="#ececf5">
     <rect x="300" y="170" width="92" height="56" rx="10" transform="rotate(7 346 198)"/>
     <rect x="150" y="58" width="78" height="48" rx="10" transform="rotate(-8 189 82)"/>
     <rect x="430" y="56" width="96" height="52" rx="10" transform="rotate(5 478 82)"/>
     <rect x="56" y="250" width="80" height="60" rx="10" transform="rotate(-5 96 280)"/>
   </g>
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M-20 70 C 150 120 340 210 620 280" stroke="#e2e8f2" stroke-width="9"/>
-    <path d="M150 -20 C 180 110 300 220 360 350" stroke="#e9eef6" stroke-width="6"/>
-    <path d="M620 60 C 500 96 440 150 410 210" stroke="#e9eef6" stroke-width="6"/>
-    <path d="M260 120 C 264 84 256 48 262 -20" stroke="#edf1f8" stroke-width="5"/>
-    <path d="M400 150 C 470 140 540 150 620 138" stroke="#e2e8f2" stroke-width="8"/>
-    <path d="M200 200 C 150 214 96 206 -20 220" stroke="#edf1f8" stroke-width="5"/>
-    <path d="M440 250 C 446 286 470 312 540 330" stroke="#edf1f8" stroke-width="5"/>
-    <path d="M-20 200 C 60 244 110 300 150 350" stroke="#d7edf0" stroke-width="12" opacity="0.7"/>
-    <path d="M110 260 C 150 240 178 222 200 200 C 226 174 240 144 260 120 C 308 132 360 138 400 150 C 440 162 452 210 440 250 C 380 280 220 290 110 260" stroke="#dbe3ee" stroke-width="11"/>
+    <path d="M-20 70 C 150 120 340 210 620 280" stroke="#e5e5f1" stroke-width="9"/>
+    <path d="M150 -20 C 180 110 300 220 360 350" stroke="#ececf5" stroke-width="6"/>
+    <path d="M620 60 C 500 96 440 150 410 210" stroke="#ececf5" stroke-width="6"/>
+    <path d="M260 120 C 264 84 256 48 262 -20" stroke="#efeff7" stroke-width="5"/>
+    <path d="M400 150 C 470 140 540 150 620 138" stroke="#e5e5f1" stroke-width="8"/>
+    <path d="M200 200 C 150 214 96 206 -20 220" stroke="#efeff7" stroke-width="5"/>
+    <path d="M440 250 C 446 286 470 312 540 330" stroke="#efeff7" stroke-width="5"/>
+    <path d="M-20 200 C 60 244 110 300 150 350" stroke="#d9e3fb" stroke-width="12" opacity="0.7"/>
+    <path d="M110 260 C 150 240 178 222 200 200 C 226 174 240 144 260 120 C 308 132 360 138 400 150 C 440 162 452 210 440 250 C 380 280 220 290 110 260" stroke="#e0e0f0" stroke-width="11"/>
   </g>
   <path class="route-line route-draw delay" style="--len:870" d="M110 260 C 150 240 178 222 200 200 C 226 174 240 144 260 120 C 308 132 360 138 400 150 C 440 162 452 210 440 250 C 380 280 220 290 110 260"/>
   <g>

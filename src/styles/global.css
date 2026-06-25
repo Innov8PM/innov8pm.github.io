@@ -268,12 +268,12 @@
    the brand palette so the figures stay on-brand. Pins reuse a shared
    <symbol id="pin"> defined once in the page. */
 .prose-i8 figure.route-fig {
-  --teal: var(--color-brand-500);
-  --teal-d: var(--color-brand-700);
-  --teal-dd: var(--color-brand-900);
+  --teal: #6366f1;
+  --teal-d: #4f46e5;
+  --teal-dd: #3730a3;
   --line: #d8e3e4;
-  --skip: #b6c2c5;
-  --amber: #e8a23d;
+  --skip: #94a3b8;
+  --amber: #f43f5e;
   background: linear-gradient(165deg, #ffffff 0%, var(--color-brand-50) 100%);
   border: 1px solid rgba(26, 171, 184, 0.12);
   border-radius: 20px;
@@ -305,11 +305,11 @@
 
 .prose-i8 .route-line {
   fill: none;
-  stroke: #512da8;
+  stroke: #6366f1;
   stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
-  filter: drop-shadow(0 2px 3px rgba(81, 45, 168, 0.35));
+  filter: drop-shadow(0 2px 3px rgba(99, 102, 241, 0.4));
 }
 
 /* Route line stays hidden until the figure is in view, then draws. */
@@ -401,7 +401,7 @@
   50% {
     filter:
       drop-shadow(0 3px 3px rgba(16, 24, 40, 0.3))
-      drop-shadow(0 0 8px rgba(232, 162, 61, 0.85));
+      drop-shadow(0 0 8px rgba(244, 63, 94, 0.85));
   }
 }
 
