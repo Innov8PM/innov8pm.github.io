@@ -42,42 +42,14 @@ you'd still be going the best part of a century later.
 </defs></svg>
 
 <figure class="route-fig">
-<svg viewBox="0 0 600 330" role="img" aria-label="A single planned run: six numbered stops visited in the cheapest order as one loop">
+<svg viewBox="0 0 600 330" role="img" aria-label="A single planned run: six stops visited in order along the streets">
   <rect x="1" y="1" width="598" height="328" rx="14" fill="#f4f5fb"/>
-  <g fill="#ececf5">
-    <rect x="296" y="140" width="92" height="52" rx="10" transform="rotate(4 342 166)"/>
-    <rect x="176" y="150" width="70" height="48" rx="10" transform="rotate(-6 211 174)"/>
-    <rect x="40" y="46" width="80" height="48" rx="10" transform="rotate(-3 80 70)"/>
-    <rect x="520" y="178" width="62" height="64" rx="10" transform="rotate(6 551 210)"/>
-  </g>
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M-20 70 C 120 84 240 62 360 78 C 460 92 540 74 620 84" stroke="#ececf5" stroke-width="6"/>
-    <path d="M-20 278 C 120 266 260 290 380 276 C 480 264 560 284 620 274" stroke="#ececf5" stroke-width="6"/>
-    <path d="M150 350 C 158 300 142 270 120 248" stroke="#efeff7" stroke-width="5"/>
-    <path d="M360 350 C 366 300 352 268 344 232" stroke="#efeff7" stroke-width="5"/>
-    <path d="M-20 150 C 56 146 92 150 128 162" stroke="#efeff7" stroke-width="4"/>
-    <path d="M190 110 C 192 74 184 40 190 -20" stroke="#e5e5f1" stroke-width="8"/>
-    <path d="M490 120 C 540 112 580 122 620 110" stroke="#e5e5f1" stroke-width="8"/>
-    <path d="M410 210 C 414 250 402 290 410 350" stroke="#e5e5f1" stroke-width="8"/>
-    <path d="M100 175 C 60 178 20 172 -20 180" stroke="#e5e5f1" stroke-width="8"/>
-    <path d="M-20 320 C 110 308 240 332 360 318 C 460 306 540 326 620 314" stroke="#d9e3fb" stroke-width="11" opacity="0.7"/>
-    <path d="M100 175 C 122 146 158 124 190 110 C 230 122 272 140 300 150 C 300 190 280 218 250 235 C 300 228 364 222 410 210 C 444 198 472 160 490 120 C 470 78 360 70 240 84 C 170 92 120 130 100 175" stroke="#e0e0f0" stroke-width="11"/>
-  </g>
-  <path class="route-line route-draw" style="--len:1090" d="M100 175 C 122 146 158 124 190 110 C 230 122 272 140 300 150 C 300 190 280 218 250 235 C 300 228 364 222 410 210 C 444 198 472 160 490 120 C 470 78 360 70 240 84 C 170 92 120 130 100 175"/>
-  <g>
-    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(100,175)"/>
-    <text class="pin-num" x="100" y="149" text-anchor="middle">1</text>
-    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(190,110)"/>
-    <text class="pin-num" x="190" y="84" text-anchor="middle">2</text>
-    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(300,150)"/>
-    <text class="pin-num" x="300" y="124" text-anchor="middle">3</text>
-    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(250,235)"/>
-    <text class="pin-num" x="250" y="209" text-anchor="middle">4</text>
-    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(410,210)"/>
-    <text class="pin-num" x="410" y="184" text-anchor="middle">5</text>
-    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(490,120)"/>
-    <text class="pin-num" x="490" y="94" text-anchor="middle">6</text>
-  </g>
+  <path d="M-20 312 C 120 303 240 326 360 312 C 460 306 540 318 620 312" stroke="#d9e3fb" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <g fill="#ececf5"><rect x="435" y="130" width="56" height="56" rx="8" transform="rotate(-3.2 463 158)"/><rect x="138" y="170" width="49" height="45" rx="8" transform="rotate(5.3 163 192)"/><rect x="390" y="35" width="83" height="43" rx="8" transform="rotate(0.1 432 57)"/><rect x="113" y="176" width="85" height="57" rx="8" transform="rotate(-6.7 155 204)"/></g>
+  <g><path d="M479 238 Q 440 252 399 262" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M479 238 Q 500 196 527 158" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M479 238 Q 480 170 473 102" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M96 103 Q 148 94 197 74" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M96 103 Q 86 156 77 210" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M326 205 Q 300 233 279 266" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M326 205 Q 296 173 286 131" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M221 183 Q 248 150 286 131" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M221 183 Q 198 224 180 267" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M221 183 Q 253 222 279 266" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M197 74 Q 243 100 286 131" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M473 102 Q 497 133 527 158" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M473 102 Q 433 122 390 134" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M473 102 Q 411 86 350 67" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M279 266 Q 230 280 180 267" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M527 158 Q 456 157 390 134" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M390 134 Q 375 98 350 67" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M390 134 Q 362 173 326 205" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M180 267 Q 125 244 77 210" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M77 210 Q 150 204 221 183" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M350 67 Q 327 108 286 131" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M399 262 Q 371 223 326 205" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M399 262 Q 339 265 279 266" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M479 238 Q 524 253 620 250" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M479 238 Q 489 283 459 350" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M96 103 Q 51 101 -20 84" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M96 103 Q 111 58 111 -20" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M197 74 Q 181 29 193 -20" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M473 102 Q 518 104 620 115" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M473 102 Q 458 57 485 -20" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M527 158 Q 572 170 620 137" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M350 67 Q 356 22 350 -20" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M399 262 Q 404 307 400 350" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><path d="M479 238 Q 500 196 527 158" stroke="#dcdcec" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M326 205 Q 300 233 279 266" stroke="#dcdcec" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M473 102 Q 497 133 527 158" stroke="#dcdcec" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M473 102 Q 433 122 390 134" stroke="#dcdcec" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M390 134 Q 362 173 326 205" stroke="#dcdcec" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <path class="route-line route-draw" style="--len:436" d="M479 238 Q 500 196 527 158 Q 497 133 473 102 Q 433 122 390 134 Q 362 173 326 205 Q 300 233 279 266"/>
+  <g><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(479,238)"/><text class="pin-num" x="479" y="212" text-anchor="middle">1</text><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(527,158)"/><text class="pin-num" x="527" y="132" text-anchor="middle">2</text><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(473,102)"/><text class="pin-num" x="473" y="76" text-anchor="middle">3</text><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(390,134)"/><text class="pin-num" x="390" y="108" text-anchor="middle">4</text><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(326,205)"/><text class="pin-num" x="326" y="179" text-anchor="middle">5</text><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(279,266)"/><text class="pin-num" x="279" y="240" text-anchor="middle">6</text></g>
 </svg>
 <figcaption>One run: the chosen stops, visited in the cheapest order, all fitting inside the working day.</figcaption>
 </figure>
@@ -116,41 +88,14 @@ availability of three separate organisations against the same route on the same
 date. If any one of them can't make it, the visit can't go ahead.
 
 <figure class="route-fig">
-<svg viewBox="0 0 600 330" role="img" aria-label="A field of candidate stops; the highest-priority ones are taken onto today's route, the rest are scheduled for later">
+<svg viewBox="0 0 600 330" role="img" aria-label="A field of candidate stops; the highest-priority ones are taken onto today’s route, the rest are scheduled for later">
   <rect x="1" y="1" width="598" height="328" rx="14" fill="#f4f5fb"/>
-  <g fill="#ececf5">
-    <rect x="300" y="170" width="92" height="56" rx="10" transform="rotate(7 346 198)"/>
-    <rect x="150" y="58" width="78" height="48" rx="10" transform="rotate(-8 189 82)"/>
-    <rect x="430" y="56" width="96" height="52" rx="10" transform="rotate(5 478 82)"/>
-    <rect x="56" y="250" width="80" height="60" rx="10" transform="rotate(-5 96 280)"/>
-  </g>
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M-20 70 C 150 120 340 210 620 280" stroke="#e5e5f1" stroke-width="9"/>
-    <path d="M150 -20 C 180 110 300 220 360 350" stroke="#ececf5" stroke-width="6"/>
-    <path d="M620 60 C 500 96 440 150 410 210" stroke="#ececf5" stroke-width="6"/>
-    <path d="M260 120 C 264 84 256 48 262 -20" stroke="#efeff7" stroke-width="5"/>
-    <path d="M400 150 C 470 140 540 150 620 138" stroke="#e5e5f1" stroke-width="8"/>
-    <path d="M200 200 C 150 214 96 206 -20 220" stroke="#efeff7" stroke-width="5"/>
-    <path d="M440 250 C 446 286 470 312 540 330" stroke="#efeff7" stroke-width="5"/>
-    <path d="M-20 200 C 60 244 110 300 150 350" stroke="#d9e3fb" stroke-width="12" opacity="0.7"/>
-    <path d="M110 260 C 150 240 178 222 200 200 C 226 174 240 144 260 120 C 308 132 360 138 400 150 C 440 162 452 210 440 250 C 380 280 220 290 110 260" stroke="#e0e0f0" stroke-width="11"/>
-  </g>
-  <path class="route-line route-draw delay" style="--len:870" d="M110 260 C 150 240 178 222 200 200 C 226 174 240 144 260 120 C 308 132 360 138 400 150 C 440 162 452 210 440 250 C 380 280 220 290 110 260"/>
-  <g>
-    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(110,260)"/>
-    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(200,200)"/>
-    <use href="#pin" class="pin-hi" width="34" height="47" x="-17" y="-47" transform="translate(260,120)"/>
-    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(400,150)"/>
-    <use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(440,250)"/>
-  </g>
-  <g opacity="0.92">
-    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(330,62)"/>
-    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(470,108)"/>
-    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(525,196)"/>
-    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(360,305)"/>
-    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(74,190)"/>
-    <use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(180,300)"/>
-  </g>
+  <path d="M-20 51 C 120 42 240 72 360 51 C 460 40 540 64 620 51" stroke="#d9e3fb" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <g fill="#ececf5"><rect x="183" y="196" width="66" height="55" rx="8" transform="rotate(5.8 216 223)"/><rect x="255" y="108" width="78" height="57" rx="8" transform="rotate(-2.9 294 137)"/><rect x="133" y="109" width="62" height="50" rx="8" transform="rotate(0.7 164 135)"/><rect x="187" y="155" width="53" height="57" rx="8" transform="rotate(6.4 213 184)"/></g>
+  <g><path d="M85 164 Q 124 190 154 227" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M85 164 Q 66 115 69 63" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M85 164 Q 135 120 175 66" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M69 63 Q 122 68 175 66" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M69 63 Q 145 96 222 126" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M286 69 Q 256 99 222 126" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M286 69 Q 230 72 175 66" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M286 69 Q 342 56 398 64" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M222 126 Q 247 155 266 188" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M222 126 Q 202 93 175 66" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M345 178 Q 306 190 266 188" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M345 178 Q 331 220 342 263" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M345 178 Q 390 201 439 209" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M513 248 Q 475 230 439 209" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M513 248 Q 488 181 467 113" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M513 248 Q 428 263 342 263" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M154 227 Q 206 242 255 265" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M154 227 Q 212 212 266 188" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M398 64 Q 433 87 467 113" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M398 64 Q 363 117 345 178" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M467 113 Q 448 160 439 209" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M467 113 Q 403 139 345 178" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M342 263 Q 299 265 255 265" stroke="#e2e2ee" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M342 263 Q 311 218 266 188" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M255 265 Q 249 225 266 188" stroke="#e9e9f3" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M85 164 Q 40 170 -20 184" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M513 248 Q 558 248 620 227" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M513 248 Q 517 293 512 350" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M154 227 Q 158 272 150 350" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M398 64 Q 385 19 419 -20" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M467 113 Q 457 68 461 -20" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M342 263 Q 344 308 323 350" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M175 66 Q 181 21 190 -20" stroke="#e7e7f1" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><path d="M345 178 Q 306 190 266 188" stroke="#dcdcec" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M154 227 Q 206 242 255 265" stroke="#dcdcec" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M398 64 Q 363 117 345 178" stroke="#dcdcec" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M342 263 Q 299 265 255 265" stroke="#dcdcec" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M342 263 Q 311 218 266 188" stroke="#dcdcec" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <path class="route-line route-draw delay" style="--len:511" d="M154 227 Q 206 242 255 265 Q 299 265 342 263 Q 311 218 266 188 Q 306 190 345 178 Q 363 117 398 64"/>
+  <g><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(154,227)"/><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(255,265)"/><use href="#pin" class="pin-hi" width="34" height="47" x="-17" y="-47" transform="translate(342,263)"/><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(266,188)"/><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(345,178)"/><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(398,64)"/></g><g opacity="0.92"><use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(85,164)"/><use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(69,63)"/><use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(286,69)"/><use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(222,126)"/><use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(513,248)"/><use href="#pin" class="pin-skip" width="14" height="20" x="-7" y="-20" transform="translate(467,113)"/></g>
 </svg>
 <div class="legend">
   <span><i class="swatch" style="background:var(--teal)"></i> on today's run</span>
