@@ -6,7 +6,7 @@ author: will-faithfull
 tags:
   - engineering
   - optimisation
-draft: true
+draft: false
 ---
 
 It's easy, when you build software for a living, to spend your whole week on
