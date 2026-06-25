@@ -53,6 +53,12 @@ you'd still be going the best part of a century later.
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M-20 60 C 90 76 168 54 250 74 C 320 92 372 70 440 72" stroke="#e9eef6" stroke-width="6"/>
     <path d="M60 350 C 92 300 120 274 150 252" stroke="#e9eef6" stroke-width="6"/>
+    <path d="M-20 200 C 110 184 196 224 300 206 C 404 188 512 216 620 192" stroke="#e9eef6" stroke-width="6"/>
+    <path d="M250 -20 C 250 26 234 52 206 76" stroke="#edf1f8" stroke-width="5"/>
+    <path d="M40 -20 C 54 70 40 150 72 248" stroke="#edf1f8" stroke-width="5"/>
+    <path d="M520 350 C 526 304 502 282 472 266" stroke="#edf1f8" stroke-width="5"/>
+    <path d="M360 300 C 396 286 420 264 432 236" stroke="#edf1f8" stroke-width="5"/>
+    <path d="M-20 252 C 60 246 96 238 132 248" stroke="#edf1f8" stroke-width="4"/>
     <path d="M182 140 C 120 152 60 138 -20 150" stroke="#e2e8f2" stroke-width="8"/>
     <path d="M300 90 C 298 56 306 26 300 -20" stroke="#e2e8f2" stroke-width="8"/>
     <path d="M430 132 C 492 120 560 132 620 118" stroke="#e2e8f2" stroke-width="8"/>
@@ -124,6 +130,12 @@ date. If any one of them can't make it, the visit can't go ahead.
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M40 350 C 70 300 110 286 140 262" stroke="#e9eef6" stroke-width="6"/>
     <path d="M620 96 C 548 104 502 122 470 152" stroke="#e9eef6" stroke-width="6"/>
+    <path d="M-20 188 C 100 176 180 214 290 198 C 392 184 510 212 620 186" stroke="#e9eef6" stroke-width="6"/>
+    <path d="M250 -20 C 250 24 236 50 210 74" stroke="#edf1f8" stroke-width="5"/>
+    <path d="M60 -20 C 72 66 56 150 96 250" stroke="#edf1f8" stroke-width="5"/>
+    <path d="M540 350 C 546 300 520 280 488 264" stroke="#edf1f8" stroke-width="5"/>
+    <path d="M-20 286 C 70 280 120 286 168 300" stroke="#edf1f8" stroke-width="4"/>
+    <path d="M430 60 C 470 70 506 90 524 120" stroke="#edf1f8" stroke-width="5"/>
     <path d="M184 138 C 130 122 70 140 -20 128" stroke="#e2e8f2" stroke-width="8"/>
     <path d="M300 118 C 300 82 306 48 300 -20" stroke="#e2e8f2" stroke-width="8"/>
     <path d="M372 212 C 444 206 528 224 620 206" stroke="#e2e8f2" stroke-width="8"/>
