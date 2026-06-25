@@ -23,6 +23,12 @@ export const AUTHORS = {
     role: 'Founder',
     bio: 'Mike is the founder of Innov-8 Management, helping UK energy and water companies bring data-driven rigour to panel management — from allocation and performance to transparent reporting across their field-service agencies.',
   },
+  'will-faithfull': {
+    name: 'Will Faithfull',
+    role: 'CTO',
+    avatar: '/images/will-faithfull.jpg',
+    linkedin: 'https://www.linkedin.com/in/will-faithfull/',
+  },
   innov8: {
     name: 'Innov-8',
   },

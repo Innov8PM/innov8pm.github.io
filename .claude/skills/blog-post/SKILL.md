@@ -32,8 +32,9 @@ If the user hasn't already supplied it, ask for (batch the questions):
    as the listing thumbnail. If the user has one, save it under
    `public/images/posts/<slug>/` and set `cover` (+ `coverAlt`). Landscape
    (~16:9) works best.
-7. **Draft?** — if the user is not ready to publish, set `draft: true` (it won't
-   appear anywhere or build a route until flipped to `false`).
+7. **Draft?** — if the user is not ready to publish, set `draft: true`. Drafts
+   are previewable in `npm run dev` at their real URL but are excluded from
+   production builds entirely until flipped to `false`.
 
 **Actively encourage visuals.** Posts read far better with pictures and
 diagrams. Prompt the user for a cover image, and for any process/flow described

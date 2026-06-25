@@ -51,8 +51,11 @@ no database.
   an entry to `AUTHORS`. A "Written by" card (avatar, name, date, optional role,
   LinkedIn link, and bio) renders at the **bottom** of each post.
 
-- `draft: true` excludes a post from `/blog`, its own page, and `/rss.xml`
-  (it won't build a route at all).
+- `draft: true` marks a post as for-review. It is **visible in `npm run dev`**
+  (so it can be previewed at its real URL) but is **excluded from production
+  builds entirely** — no route, listing entry, archive, RSS item, or OG card.
+  This is enforced centrally by `getBlogPosts()` in `src/utils.ts`; every page
+  queries posts through it, so don't call `getCollection('blog')` directly.
 - Body is standard Markdown. Headings start at `##` (the `#`/h1 is rendered from
   `title`). Article styling comes from the `.prose-i8` class in `global.css` —
   no typography plugin.

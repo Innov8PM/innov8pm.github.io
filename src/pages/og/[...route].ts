@@ -1,10 +1,10 @@
 import { OGImageRoute } from 'astro-og-canvas'
-import { getCollection } from 'astro:content'
+import { getBlogPosts } from '../../utils'
 
 // Build-time generated Open Graph cards. Blog posts get a unique card from
 // their title/description; the home and blog-listing pages get static cards.
 // Images are emitted to /og/<key>.png.
-const posts = await getCollection('blog', ({ data }) => !data.draft)
+const posts = await getBlogPosts()
 
 const staticPages: Record<string, { title: string; description: string }> = {
   home: {
