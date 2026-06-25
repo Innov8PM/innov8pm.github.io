@@ -278,6 +278,19 @@
   border: 1px solid var(--color-brand-100);
   border-radius: 16px;
   padding: 22px 22px 16px;
+  /* Lazy reveal: hidden until scrolled into view (.in-view added by the
+     IntersectionObserver in Layout.astro), then the figure rises in and the
+     route + pins animate. */
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.prose-i8 figure.route-fig.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .prose-i8 figure.route-fig svg {
@@ -294,13 +307,19 @@
   stroke-linejoin: round;
 }
 
+/* Route line stays hidden until the figure is in view, then draws. */
 .prose-i8 .route-draw {
   stroke-dasharray: var(--len);
   stroke-dashoffset: var(--len);
-  animation: i8-route-draw 2.2s ease-out forwards;
 }
 
-.prose-i8 .route-draw.delay { animation-delay: 0.3s; }
+.prose-i8 figure.route-fig.in-view .route-draw {
+  animation: i8-route-draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) 0.35s forwards;
+}
+
+.prose-i8 figure.route-fig.in-view .route-draw.delay {
+  animation-delay: 0.55s;
+}
 
 .prose-i8 .pin-route { fill: var(--teal); }
 .prose-i8 .pin-skip { fill: var(--skip); }
@@ -310,6 +329,37 @@
   font-weight: 700;
   font-size: 12px;
   fill: #fff;
+}
+
+/* Pins + numbers drop in after the route starts tracing, staggered for a
+   "popping along the route" feel. (Opacity only — the pins are positioned
+   with an SVG transform attribute, so a CSS transform would displace them.) */
+.prose-i8 figure.route-fig use[class*="pin-"],
+.prose-i8 figure.route-fig text.pin-num {
+  opacity: 0;
+}
+
+.prose-i8 figure.route-fig.in-view use[class*="pin-"],
+.prose-i8 figure.route-fig.in-view text.pin-num {
+  animation: i8-pin-in 0.5s ease-out 0.7s both;
+}
+
+.prose-i8 figure.route-fig.in-view use:nth-of-type(2),
+.prose-i8 figure.route-fig.in-view text:nth-of-type(2) { animation-delay: 0.79s; }
+.prose-i8 figure.route-fig.in-view use:nth-of-type(3),
+.prose-i8 figure.route-fig.in-view text:nth-of-type(3) { animation-delay: 0.88s; }
+.prose-i8 figure.route-fig.in-view use:nth-of-type(4),
+.prose-i8 figure.route-fig.in-view text:nth-of-type(4) { animation-delay: 0.97s; }
+.prose-i8 figure.route-fig.in-view use:nth-of-type(5),
+.prose-i8 figure.route-fig.in-view text:nth-of-type(5) { animation-delay: 1.06s; }
+.prose-i8 figure.route-fig.in-view use:nth-of-type(6),
+.prose-i8 figure.route-fig.in-view text:nth-of-type(6) { animation-delay: 1.15s; }
+
+/* The high-value pin fades in, then keeps a gentle glow to draw the eye. */
+.prose-i8 figure.route-fig.in-view use.pin-hi {
+  animation:
+    i8-pin-in 0.5s ease-out 0.95s both,
+    i8-pin-pulse 2.4s ease-in-out 1.7s infinite;
 }
 
 .prose-i8 figure.route-fig .legend {
@@ -329,8 +379,30 @@
   to { stroke-dashoffset: 0; }
 }
 
+@keyframes i8-pin-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes i8-pin-pulse {
+  0%, 100% { filter: drop-shadow(0 0 0 rgba(232, 162, 61, 0)); }
+  50% { filter: drop-shadow(0 0 7px rgba(232, 162, 61, 0.75)); }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .prose-i8 .route-draw { animation: none; stroke-dashoffset: 0; }
+  .prose-i8 figure.route-fig,
+  .prose-i8 figure.route-fig.in-view {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .prose-i8 figure.route-fig .route-draw { animation: none; stroke-dashoffset: 0; }
+  .prose-i8 figure.route-fig use[class*="pin-"],
+  .prose-i8 figure.route-fig text.pin-num,
+  .prose-i8 figure.route-fig use.pin-hi {
+    animation: none;
+    opacity: 1;
+  }
 }
 
 .prose-i8 hr {

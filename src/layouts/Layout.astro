@@ -92,14 +92,20 @@ const ogImageURL = new URL(image, Astro.site)
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            if (entry.isIntersecting) {
+            if (!entry.isIntersecting) return
+            // Route-map figures play their draw/pin animations once on reveal;
+            // everything else just fades in.
+            if (entry.target.classList.contains('route-fig')) {
+              entry.target.classList.add('in-view')
+              observer.unobserve(entry.target)
+            } else {
               entry.target.classList.add('is-visible')
             }
           })
         },
         { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
       )
-      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el))
+      document.querySelectorAll('.reveal, .route-fig').forEach((el) => observer.observe(el))
     </script>
   </body>
 </html>
