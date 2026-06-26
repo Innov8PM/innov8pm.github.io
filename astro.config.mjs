@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://innov8pm.github.io',
+  site: 'https://www.i8panel.co.uk',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]
