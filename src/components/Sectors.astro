@@ -63,7 +63,7 @@ const sectors = [
         <div class={`reveal reveal-delay-${(i % 2) + 1} group p-8 bg-white rounded-2xl border border-gray-100 hover:border-brand-200/60 transition-all duration-500 hover:shadow-xl hover:shadow-brand-50`}>
           <div class="flex items-start gap-5">
             <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 flex items-center justify-center shrink-0 group-hover:from-brand-100 group-hover:to-brand-200 transition-all duration-500">
-              <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg aria-hidden="true" focusable="false" class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <Fragment set:html={sector.icon} />
               </svg>
             </div>
@@ -74,7 +74,7 @@ const sectors = [
               <ul class="space-y-2">
                 {sector.items.map(item => (
                   <li class="flex gap-2 text-[15px] text-charcoal-light leading-relaxed">
-                    <svg class="w-4 h-4 text-brand-500 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 text-brand-500 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                     </svg>
                     {item}

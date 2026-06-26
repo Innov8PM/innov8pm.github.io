@@ -440,3 +440,51 @@
   from { transform: translateX(20px); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
 }
+
+/* ── Accessibility ── */
+
+/* Skip-to-content link: off-screen until focused. */
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 100;
+  padding: 0.65rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--color-brand-600);
+  color: #fff;
+  font-weight: 600;
+  transform: translateY(-150%);
+  transition: transform 0.2s ease;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@layer base {
+  /* Visible keyboard-focus indicator across interactive elements. */
+  :focus-visible {
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+/* Honour the OS "reduce motion" setting site-wide. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

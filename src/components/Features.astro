@@ -51,7 +51,7 @@ const features = [
       {features.map((feature, i) => (
         <div class={`reveal reveal-delay-${(i % 3) + 1} group relative p-8 rounded-2xl bg-white border border-gray-100 hover:border-brand-200/60 transition-all duration-500 hover:shadow-xl hover:shadow-brand-50`}>
           <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 flex items-center justify-center mb-6 group-hover:from-brand-100 group-hover:to-brand-200 transition-all duration-500">
-            <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg aria-hidden="true" focusable="false" class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <Fragment set:html={feature.icon} />
             </svg>
           </div>

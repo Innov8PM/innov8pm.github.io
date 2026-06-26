@@ -43,7 +43,7 @@ const columns = [
         <ul class="space-y-4">
           {col.items.map((item) => (
             <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg aria-hidden="true" focusable="false" class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
               <span class="text-[15px] text-charcoal leading-relaxed font-medium">{item}</span>

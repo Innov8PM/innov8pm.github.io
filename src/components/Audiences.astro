@@ -43,7 +43,7 @@ const audiences = [
           <div class="p-8 pb-0">
             <div class="flex items-center gap-4 mb-6">
               <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-50 to-brand-100 flex items-center justify-center group-hover:from-brand-100 group-hover:to-brand-200 transition-all duration-500">
-                <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg aria-hidden="true" focusable="false" class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <Fragment set:html={aud.icon} />
                 </svg>
               </div>
@@ -57,7 +57,7 @@ const audiences = [
             <ul class="space-y-3">
               {aud.items.map(item => (
                 <li class="flex gap-3 text-[15px] text-charcoal-light leading-relaxed">
-                  <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg aria-hidden="true" focusable="false" class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
                   {item}
