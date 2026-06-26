@@ -27,11 +27,12 @@ export async function getStaticPaths() {
 }
 
 const { tag, posts } = Astro.props
+const label = tag.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
 ---
 
 <Layout
-  title={`${tag} — Innov-8 Blog`}
-  description={`Posts tagged ${tag} from the Innov-8 blog.`}
+  title={`${label} — Innov-8 Blog`}
+  description={`Articles on ${label.toLowerCase()} from the Innov-8 blog — panel management for UK field services.`}
   image="/og/blog.png"
 >
   <Nav />
@@ -43,10 +44,10 @@ const { tag, posts } = Astro.props
           Tag
         </p>
         <h1 class="reveal reveal-delay-1 text-4xl md:text-5xl font-bold tracking-[-0.02em] text-charcoal leading-tight font-display">
-          {tag}
+          {label}
         </h1>
         <p class="reveal reveal-delay-2 mt-5 text-lg text-charcoal-light leading-relaxed">
-          {posts.length} {posts.length === 1 ? 'post' : 'posts'} tagged &ldquo;{tag}&rdquo;.
+          {posts.length} {posts.length === 1 ? 'post' : 'posts'} tagged &ldquo;{label}&rdquo;.
         </p>
         <a
           href="/blog/"

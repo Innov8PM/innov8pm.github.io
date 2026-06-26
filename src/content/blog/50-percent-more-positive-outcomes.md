@@ -1,6 +1,6 @@
 ---
 title: How we generate 50% more positive outcomes
-description: "A question we keep getting asked — and the answer is our data-led allocation model: agencies competing for share at postcode level, with weightings that reset every 12 weeks."
+description: "The data-led allocation model behind the numbers: agencies compete for case share at postcode level, with weightings that reset every 12 weeks."
 pubDate: 2026-05-21
 author: mike-wolfenden
 tags:
