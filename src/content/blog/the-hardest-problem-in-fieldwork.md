@@ -70,9 +70,9 @@ valuable cases come first.
 That changes the problem. It's no longer plain Travelling Salesman, it's one of
 the [vehicle routing problems](https://en.wikipedia.org/wiki/Vehicle_routing_problem#VRP_variants):
 specifically a prize-collecting route, closer to what's called the orienteering
-problem. You're not just looking for the most-efficient way to visit a fixed list,
-you're choosing how to spend a finite day so the most valuable and most pressing
-work gets done first. And "value" isn't one number. It's a trade-off between
+problem. The goal shifts from finding the most-efficient way through a fixed list
+to spending a finite day well, so the most valuable and most pressing work gets
+done first. And "value" isn't one number. It's a trade-off between
 things that pull in different directions:
 
 - the priority of the case
@@ -87,9 +87,9 @@ somewhere else.
 Warrant work adds another layer on top of that. A single visit can require three
 different field operatives, from three different companies, at the same address
 at the same time: a warrant officer, a locksmith, and an engineer to carry out
-the work itself. So you're not arranging one team's day, you're coordinating the
-availability of three separate organisations against the same route on the same
-date. If any one of them can't make it, the visit can't go ahead.
+the work itself. So the job stops being one team's day and becomes a scheduling
+problem across three separate organisations, all against the same route on the
+same date. If any one of them can't make it, the visit can't go ahead.
 
 <figure class="route-fig">
 <svg viewBox="0 0 600 330" role="img" aria-label="A field of candidate stops; the highest-priority ones are taken onto today’s route, the rest are scheduled for later">
@@ -142,7 +142,7 @@ everyone live with it.
 
 It plans against real road travel times rather than straight-line distances,
 which counts for a lot once there are rivers, motorways and one-way systems in
-the way. It finds the genuinely best order for each run, not an approximation of
+the way. It finds the best possible order for each run, not an approximation of
 it. And it doesn't just produce an answer and walk off: it puts a proposed plan
 in front of a person, with its reasoning attached, and waits for a yes or no
 before anything is committed. The computer does the heavy arithmetic and a human
