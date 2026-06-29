@@ -54,7 +54,7 @@ you'd still be going the best part of a century later.
   <g><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(479,238)"/><text class="pin-num" x="479" y="212" text-anchor="middle">1</text><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(527,158)"/><text class="pin-num" x="527" y="132" text-anchor="middle">2</text><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(473,102)"/><text class="pin-num" x="473" y="76" text-anchor="middle">3</text><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(390,134)"/><text class="pin-num" x="390" y="108" text-anchor="middle">4</text><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(326,205)"/><text class="pin-num" x="326" y="179" text-anchor="middle">5</text><use href="#pin" class="pin-route" width="17" height="24" x="-8.5" y="-24" transform="translate(279,266)"/><text class="pin-num" x="279" y="240" text-anchor="middle">6</text></g>
   </g>
 </svg>
-<figcaption>One run: the chosen stops, visited in the cheapest order, all fitting inside the working day.</figcaption>
+<figcaption>One run: the chosen stops, visited in the most-efficient order, all fitting inside the working day.</figcaption>
 </figure>
 
 And that's the easy half.
@@ -69,7 +69,7 @@ valuable cases come first.
 That changes the problem. It's no longer plain Travelling Salesman, it's one of
 the [vehicle routing problems](https://en.wikipedia.org/wiki/Vehicle_routing_problem#VRP_variants):
 specifically a prize-collecting route, closer to what's called the orienteering
-problem. You're not just looking for the cheapest way to visit a fixed list,
+problem. You're not just looking for the most-efficient way to visit a fixed list,
 you're choosing how to spend a finite day so the most valuable and most pressing
 work gets done first. And "value" isn't one number. It's a trade-off between
 things that pull in different directions:
