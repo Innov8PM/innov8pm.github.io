@@ -164,7 +164,7 @@ If you're one of our field agencies, it means the work that reaches you turns up
 already arranged into sensible, geographically coherent days, instead of a pile
 of addresses you have to sort out yourselves.
 
-And for me, it was a good reminder of something that's easy to forget when you're
-buried in a backlog: there's often a small and genuinely hard problem hiding
-underneath otherwise ordinary operational software. Getting to spend a few days
-on one is a treat, not a chore.
+And for me, it's a reminder of why a formal computer science education isn't
+necessarily a waste of time in this profession. It can give you the tools to
+recognise the formal shape of certain problem classes, an intuition that has
+become supremely powerful in the age of AI.
