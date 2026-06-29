@@ -64,7 +64,7 @@ We can't get through everything in a day, though. There's almost always more
 work than there are hours for it, and not every case carries the same priority
 or the same value to the client. So the real question isn't whether a case gets
 visited, it's which cases a team takes on a given day, and in what order. Nothing
-gets dropped — it's a matter of sequencing the work so the most pressing and most
+gets dropped; it's a matter of sequencing the work so the most pressing and most
 valuable cases come first.
 
 That changes the problem. It's no longer plain Travelling Salesman, it's one of
@@ -127,8 +127,8 @@ That's the part I got properly excited about. It's a lovely problem to chew on.
 I'll keep the inner workings to myself, but the general shape I'm happy to share.
 
 We built a planning engine that knows nothing about warrants, or water, or
-energy. It understands the abstract problem — value, time, distance, eligibility,
-hard limits — and the domain-specific bits are fed in as configuration. That
+energy. It understands the abstract problem (value, time, distance, eligibility,
+hard limits), and the domain-specific bits are fed in as configuration. That
 matters more than it sounds. The same engine can plan a smart meter installation
 campaign, a warrant enforcement round and a maintenance schedule all at once,
 each with its own rules, and those rules can be tuned by the people who
