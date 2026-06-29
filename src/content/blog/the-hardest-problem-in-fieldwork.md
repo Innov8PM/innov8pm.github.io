@@ -9,11 +9,12 @@ tags:
 draft: false
 ---
 
-It's easy, when you build software for a living, to spend your whole week on
-process — tickets, reviews, deploys, the standup about the standup. So I'll admit
-I was a bit too pleased with myself recently when I got to spend a few days on a
-problem that's actually hard. The kind people were writing papers about long
-before there were computers fast enough to run the solutions.
+Most problems in software are wider than they are deep. The job is usually
+plugging and wiring things together, or shovelling data from A to B: breadth, not
+depth. It's historically been the driver of engineers' collective groan at
+data-structures-and-algorithms interview processes, when does anyone actually
+*use* this stuff? But on the rare occasion you do come across a real DS&A problem,
+it's a treat, for me anyway.
 
 Here it is, in plain terms.
 
@@ -63,15 +64,15 @@ We can't get through everything in a day, though. There's almost always more
 work than there are hours for it, and not every case carries the same priority
 or the same value to the client. So the real question isn't whether a case gets
 visited, it's which cases a team takes on a given day, and in what order. Nothing
-gets dropped — it's a matter of sequencing the work so the most pressing and most
+gets dropped; it's a matter of sequencing the work so the most pressing and most
 valuable cases come first.
 
 That changes the problem. It's no longer plain Travelling Salesman, it's one of
 the [vehicle routing problems](https://en.wikipedia.org/wiki/Vehicle_routing_problem#VRP_variants):
 specifically a prize-collecting route, closer to what's called the orienteering
-problem. You're not just looking for the most-efficient way to visit a fixed list,
-you're choosing how to spend a finite day so the most valuable and most pressing
-work gets done first. And "value" isn't one number. It's a trade-off between
+problem. The goal shifts from finding the most-efficient way through a fixed list
+to spending a finite day well, so the most valuable and most pressing work gets
+done first. And "value" isn't one number. It's a trade-off between
 things that pull in different directions:
 
 - the priority of the case
@@ -86,9 +87,9 @@ somewhere else.
 Warrant work adds another layer on top of that. A single visit can require three
 different field operatives, from three different companies, at the same address
 at the same time: a warrant officer, a locksmith, and an engineer to carry out
-the work itself. So you're not arranging one team's day, you're coordinating the
-availability of three separate organisations against the same route on the same
-date. If any one of them can't make it, the visit can't go ahead.
+the work itself. So the job stops being one team's day and becomes a scheduling
+problem across three separate organisations, all against the same route on the
+same date. If any one of them can't make it, the visit can't go ahead.
 
 <figure class="route-fig">
 <svg viewBox="0 0 600 330" role="img" aria-label="A field of candidate stops; the highest-priority ones are taken onto today’s route, the rest are scheduled for later">
@@ -126,8 +127,8 @@ That's the part I got properly excited about. It's a lovely problem to chew on.
 I'll keep the inner workings to myself, but the general shape I'm happy to share.
 
 We built a planning engine that knows nothing about warrants, or water, or
-energy. It understands the abstract problem — value, time, distance, eligibility,
-hard limits — and the domain-specific bits are fed in as configuration. That
+energy. It understands the abstract problem (value, time, distance, eligibility,
+hard limits), and the domain-specific bits are fed in as configuration. That
 matters more than it sounds. The same engine can plan a smart meter installation
 campaign, a warrant enforcement round and a maintenance schedule all at once,
 each with its own rules, and those rules can be tuned by the people who
@@ -141,7 +142,7 @@ everyone live with it.
 
 It plans against real road travel times rather than straight-line distances,
 which counts for a lot once there are rivers, motorways and one-way systems in
-the way. It finds the genuinely best order for each run, not an approximation of
+the way. It finds the best possible order for each run, not an approximation of
 it. And it doesn't just produce an answer and walk off: it puts a proposed plan
 in front of a person, with its reasoning attached, and waits for a yes or no
 before anything is committed. The computer does the heavy arithmetic and a human
@@ -163,7 +164,7 @@ If you're one of our field agencies, it means the work that reaches you turns up
 already arranged into sensible, geographically coherent days, instead of a pile
 of addresses you have to sort out yourselves.
 
-And for me, it was a good reminder of something that's easy to forget when you're
-buried in a backlog: there's often a small and genuinely hard problem hiding
-underneath otherwise ordinary operational software. Getting to spend a few days
-on one is a treat, not a chore.
+And for me, it's a reminder of why a formal computer science education isn't
+necessarily a waste of time in this profession. It can give you the tools to
+recognise the formal shape of certain problem classes, an intuition that has
+become supremely powerful in the age of AI.
