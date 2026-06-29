@@ -14,8 +14,7 @@ plugging and wiring things together, or shovelling data from A to B: breadth, no
 depth. It's historically been the driver of engineers' collective groan at
 data-structures-and-algorithms interview processes, when does anyone actually
 *use* this stuff? But on the rare occasion you do come across a real DS&A problem,
-it's a treat, for me anyway. The kind of thing people were writing papers about
-long before there were computers fast enough to run the solutions.
+it's a treat, for me anyway.
 
 Here it is, in plain terms.
 
