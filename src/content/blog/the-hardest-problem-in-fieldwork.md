@@ -9,11 +9,13 @@ tags:
 draft: false
 ---
 
-It's easy, when you build software for a living, to spend your whole week on
-process — tickets, reviews, deploys, the standup about the standup. So I'll admit
-I was a bit too pleased with myself recently when I got to spend a few days on a
-problem that's actually hard. The kind people were writing papers about long
-before there were computers fast enough to run the solutions.
+Most problems in software are wider than they are deep. The job is usually
+plugging and wiring things together, or shovelling data from A to B: breadth, not
+depth. It's historically been the driver of engineers' collective groan at
+data-structures-and-algorithms interview processes, when does anyone actually
+*use* this stuff? But on the rare occasion you do come across a real DS&A problem,
+it's a treat, for me anyway. The kind of thing people were writing papers about
+long before there were computers fast enough to run the solutions.
 
 Here it is, in plain terms.
 
