@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Three data sources feeding a central register, which flags a small number of addresses across a field of routine visits">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b3039"/>
+      <stop offset="0.55" stop-color="#134753"/>
+      <stop offset="1" stop-color="#0b3039"/>
+    </linearGradient>
+
+    <radialGradient id="hubGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3ec6cf" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#3ec6cf" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="flagGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e8a23d" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#e8a23d" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="feed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3ec6cf" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#7ddde3" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <symbol id="cpin" viewBox="0 0 24 34">
+      <path d="M12 1C6 1 1.5 5.6 1.5 11.4 1.5 19.2 12 33 12 33S22.5 19.2 22.5 11.4C22.5 5.6 18 1 12 1Z"/>
+    </symbol>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- Faint street grid, skewed so it reads as a map rather than a chart -->
+  <g stroke="#7ddde3" stroke-opacity="0.07" stroke-width="2" fill="none">
+    <g transform="rotate(-6 1100 450)">
+      <path d="M760 120 H1620"/>
+      <path d="M720 260 H1620"/>
+      <path d="M700 400 H1620"/>
+      <path d="M700 540 H1620"/>
+      <path d="M720 680 H1620"/>
+      <path d="M760 820 H1620"/>
+      <path d="M880 60 V860"/>
+      <path d="M1040 60 V860"/>
+      <path d="M1200 60 V860"/>
+      <path d="M1360 60 V860"/>
+      <path d="M1520 60 V860"/>
+    </g>
+  </g>
+
+  <!-- Building footprints -->
+  <g fill="#7ddde3" fill-opacity="0.05">
+    <g transform="rotate(-6 1100 450)">
+      <rect x="910" y="300" width="104" height="76" rx="8"/>
+      <rect x="1074" y="176" width="86" height="62" rx="8"/>
+      <rect x="1238" y="436" width="112" height="80" rx="8"/>
+      <rect x="1074" y="580" width="94" height="70" rx="8"/>
+      <rect x="1400" y="290" width="90" height="66" rx="8"/>
+      <rect x="920" y="600" width="88" height="64" rx="8"/>
+      <rect x="1400" y="600" width="100" height="72" rx="8"/>
+      <rect x="1240" y="180" width="96" height="60" rx="8"/>
+    </g>
+  </g>
+
+  <!-- Three source feeds converging on the register -->
+  <g fill="none" stroke="url(#feed)" stroke-width="3" stroke-linecap="round">
+    <path d="M250 250 C 380 250, 400 380, 520 430"/>
+    <path d="M250 450 C 390 450, 420 450, 520 450"/>
+    <path d="M250 650 C 380 650, 400 520, 520 470"/>
+  </g>
+
+  <!-- Source nodes -->
+  <g>
+    <g fill="#0b3039" stroke="#3ec6cf" stroke-opacity="0.55" stroke-width="2.5">
+      <rect x="150" y="214" width="72" height="72" rx="18"/>
+      <rect x="150" y="414" width="72" height="72" rx="18"/>
+      <rect x="150" y="614" width="72" height="72" rx="18"/>
+    </g>
+    <g fill="#7ddde3" fill-opacity="0.9">
+      <circle cx="186" cy="250" r="9"/>
+      <circle cx="186" cy="450" r="9"/>
+      <circle cx="186" cy="650" r="9"/>
+    </g>
+  </g>
+
+  <!-- Central register hub -->
+  <circle cx="570" cy="450" r="150" fill="url(#hubGlow)"/>
+  <circle cx="570" cy="450" r="62" fill="#0b3039" stroke="#3ec6cf" stroke-width="3"/>
+  <g transform="translate(570 450)">
+    <path d="M0 -30 L26 -18 V4 C26 20 14 29 0 34 -14 29 -26 20 -26 4 V-18 Z"
+          fill="none" stroke="#7ddde3" stroke-width="3" stroke-linejoin="round"/>
+    <use href="#cpin" width="13" height="18" x="-6.5" y="-13" fill="#7ddde3"/>
+  </g>
+
+  <!-- Register out to the address field -->
+  <g fill="none" stroke="#3ec6cf" stroke-opacity="0.3" stroke-width="2.5" stroke-linecap="round">
+    <path d="M632 420 C 760 360, 820 300, 944 268"/>
+    <path d="M636 450 C 800 450, 900 470, 1046 496"/>
+    <path d="M632 482 C 760 546, 830 610, 962 646"/>
+  </g>
+
+  <!-- Routine addresses -->
+  <g fill="#7ddde3" fill-opacity="0.32">
+    <use href="#cpin" width="26" height="37" x="-13" y="-37" transform="translate(944 268)"/>
+    <use href="#cpin" width="26" height="37" x="-13" y="-37" transform="translate(1188 232)"/>
+    <use href="#cpin" width="26" height="37" x="-13" y="-37" transform="translate(1442 322)"/>
+    <use href="#cpin" width="26" height="37" x="-13" y="-37" transform="translate(1298 552)"/>
+    <use href="#cpin" width="26" height="37" x="-13" y="-37" transform="translate(962 646)"/>
+    <use href="#cpin" width="26" height="37" x="-13" y="-37" transform="translate(1466 690)"/>
+    <use href="#cpin" width="26" height="37" x="-13" y="-37" transform="translate(1116 762)"/>
+  </g>
+
+  <!-- Flagged addresses -->
+  <g>
+    <circle cx="1046" cy="496" r="52" fill="url(#flagGlow)"/>
+    <circle cx="1354" cy="416" r="52" fill="url(#flagGlow)"/>
+    <circle cx="1210" cy="672" r="52" fill="url(#flagGlow)"/>
+
+    <g fill="none" stroke="#e8a23d" stroke-opacity="0.4" stroke-width="2" stroke-dasharray="7 8">
+      <path d="M1046 496 L1354 416"/>
+      <path d="M1046 496 L1210 672"/>
+      <path d="M1354 416 L1210 672"/>
+    </g>
+
+    <g fill="#e8a23d">
+      <use href="#cpin" width="34" height="48" x="-17" y="-48" transform="translate(1046 496)"/>
+      <use href="#cpin" width="34" height="48" x="-17" y="-48" transform="translate(1354 416)"/>
+      <use href="#cpin" width="34" height="48" x="-17" y="-48" transform="translate(1210 672)"/>
+    </g>
+  </g>
+</svg>
