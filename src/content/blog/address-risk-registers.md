@@ -29,7 +29,7 @@ been prevented happen instead.
 
 A water company knows one set of unsafe addresses. An energy supplier knows
 another. A field agency keeps its own records. When an agent visits an address,
-nobody may know what the previous visitor learned — and the agent is the one
+nobody may know what the previous visitor learned, and the agent is the one
 bearing that risk.
 
 ## The solution
@@ -39,14 +39,10 @@ unsafe. It pools intelligence from three sources: agencies reporting field
 incidents, clients sharing their own incident data, and patterns emerging from
 visit volumes across different sectors.
 
-The key principle is transparent data flow. Agencies see that an address is on
-the register, because they need the context. Clients see aggregate risk data.
-And nobody is penalised for declining work on a risk-identified address.
-
 ## How it works
 
 <figure>
-  <div class="i8-flow" role="img" aria-label="Four-step address risk flow: 1. Detection — on load, cases matching the register are exceptioned. 2. Review — the flagged data is presented to the Innov-8 team. 3. Communicate — logged discussions are held with the client, then the agency. 4. Action — full case notes pass to the agency for a bespoke site visit.">
+  <div class="i8-flow" role="img" aria-label="Four-step address risk flow: 1. Detection: on load, cases matching the register are exceptioned. 2. Review: the flagged data is presented to the Innov-8 team. 3. Communicate: logged discussions are held with the client, then the agency. 4. Action: full case notes pass to the agency for a bespoke site visit.">
     <div class="i8-flow-step">
       <span class="i8-flow-node s1">1</span>
       <span class="i8-flow-title">Detection</span>
@@ -76,49 +72,33 @@ And nobody is penalised for declining work on a risk-identified address.
 
 ### Step 1: Detection
 
-<div class="i8-suggestion">
-
 On load, every case is matched against the address risk register. A match
-doesn't stop the work — it exceptions the case, holding it out of normal routing
+doesn't stop the work. It exceptions the case, holding it out of normal routing
 so the flag is dealt with by a person. The alternative is what happens today:
 the case passes silently down the line, and the first person to learn the
 address has a history is whoever knocks on the door.
 
-</div>
-
 ### Step 2: Review
 
-<div class="i8-suggestion">
-
 The exceptioned case goes to the Innov-8 management team with the register entry
-attached — what was reported, when, and which source it came from. That context
+attached: what was reported, when, and which source it came from. That context
 is the difference between "this address is a risk" and a decision somebody can
 actually act on.
 
-</div>
-
 ### Step 3: Communicate
-
-<div class="i8-suggestion">
 
 We hold a logged discussion with the client about the particulars of the flag
 reason, then take the same detail to the agency or agencies involved. Logged is
 the operative word: it means the conversation, and the decision that came out of
 it, are auditable afterwards rather than remembered differently by each party.
 
-</div>
-
 ### Step 4: Action
 
-<div class="i8-suggestion">
-
 Where all parties agree the case should proceed, the agency receives the full
-case notes — not just the flag — and sources the most appropriate field agent or
+case notes, not just the flag, and sources the most appropriate field agent or
 agents for a bespoke site visit. This is the part that matters most: the visit
 still happens where it needs to happen, but it happens with the right people and,
 where applicable, a specialist strategy behind it.
-
-</div>
 
 ## Why it matters across sectors
 
@@ -134,15 +114,8 @@ safety patterns that would otherwise be missed.
 - Attrition rates across field operative services improve.
 - Clients reduce their overall risk in field services and third-party
   management.
-- Visits can still happen — but everyone is on the same page, and where
+- Visits can still happen, but everyone is on the same page, and where
   applicable, specialist strategies can be deployed.
-
-## Legal basis
-
-Under the Health and Safety at Work etc. Act 1974, employers have a duty of care
-to protect operatives from foreseeable workplace hazards, so far as is
-reasonably practicable. An address risk register is a documented, auditable way
-to evidence that obligation being met.
 
 ## Challenge, innovate, win
 
