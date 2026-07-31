@@ -137,6 +137,42 @@
   color: var(--color-charcoal);
 }
 
+/* Review-only annotation: marks proposed wording while a post is being
+   proof-read, so a reviewer can tell a suggestion from settled copy. Markup:
+     <div class="i8-suggestion"><p>…</p></div>
+   Deliberately amber, not brand teal — teal reads as finished, on-brand
+   content, which is the opposite of the signal needed here. The dashed border
+   carries the same "provisional" meaning without relying on colour alone, and
+   the label states what the reviewer should do with it.
+   Unwrap these divs before publishing; the post should ship without them. */
+.prose-i8 .i8-suggestion {
+  --suggest-ink: #8a5a12;
+  --suggest-edge: #e8a23d;
+  background: #fffdf7;
+  border: 1px dashed var(--suggest-edge);
+  border-left: 3px solid var(--suggest-edge);
+  border-radius: 0.75rem;
+  padding: 1.1rem 1.25rem;
+}
+
+.prose-i8 .i8-suggestion::before {
+  content: "Suggested wording — confirm or correct";
+  display: block;
+  margin-bottom: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--suggest-ink);
+}
+
+/* .prose-i8's owl selector only spaces direct children, so paragraphs nested
+   inside the annotation need their own rhythm. */
+.prose-i8 .i8-suggestion p + p {
+  margin-top: 1em;
+}
+
 .prose-i8 code {
   background: var(--color-brand-50);
   color: var(--color-brand-800);
