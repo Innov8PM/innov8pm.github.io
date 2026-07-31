@@ -116,6 +116,7 @@ safety patterns that would otherwise be missed.
   management.
 - Visits can still happen, but everyone is on the same page, and where
   applicable, specialist strategies can be deployed.
+- Nobody is penalised for declining work on a risk-identified address.
 
 ## Challenge, innovate, win
 
